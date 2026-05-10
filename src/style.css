@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-on-scroll-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-on-scroll-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+  animation-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+  animation-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+  animation-delay: 300ms;
+}
+.delay-400 {
+  transition-delay: 400ms;
+  animation-delay: 400ms;
+}
+.delay-500 {
+  transition-delay: 500ms;
+  animation-delay: 500ms;
+}
+.delay-600 {
+  transition-delay: 600ms;
+  animation-delay: 600ms;
+}
+.delay-700 {
+  transition-delay: 700ms;
+  animation-delay: 700ms;
+}
+.delay-800 {
+  transition-delay: 800ms;
+  animation-delay: 800ms;
+}
+
+.btn-hover-effect {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-hover-effect::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(155, 228, 196, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-hover-effect:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.4s ease;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* ─── Lang toggle ─── */
+.lang-toggle-indicator {
+  width: calc(50% - 4px);
+  left: 4px;
+}
+
+/* ─── Custom Cursor ─── */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  will-change: transform;
+}
+
+.cursor-dot-inner {
+  width: 10px;
+  height: 10px;
+  background: #111;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+.cursor-dot-inner.is-hovering {
+  width: 14px;
+  height: 14px;
+  background: #9be4c4;
+}
+
+.cursor-dot-inner.is-clicking {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99998;
+  will-change: transform;
+}
+
+.cursor-ring-inner {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.35s ease, height 0.35s ease, border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.cursor-ring-inner.is-hovering {
+  width: 54px;
+  height: 54px;
+  border-color: #9be4c4;
+  opacity: 0.75;
+}
+
+/* ─── Morphing blobs ─── */
+@keyframes morphBlob {
+  0%, 100% { border-radius: 50%; }
+  20%  { border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%; }
+  40%  { border-radius: 45% 55% 40% 60% / 60% 40% 60% 40%; }
+  60%  { border-radius: 55% 45% 60% 40% / 40% 60% 50% 50%; }
+  80%  { border-radius: 40% 60% 45% 55% / 55% 45% 60% 40%; }
+}
+
+.animate-morph {
+  animation: morphBlob 8s ease-in-out infinite;
+}
+
+/* ─── Page wipe transition ─── */
+.wipe-overlay {
+  position: fixed;
+  inset: 0;
+  background: #9be4c4;
+  z-index: 9999;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.wipe-overlay.wipe-in {
+  visibility: visible;
+  animation: wipeIn 0.38s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}
+
+.wipe-overlay.wipe-out {
+  visibility: visible;
+  animation: wipeOut 0.42s cubic-bezier(0.77, 0, 0.18, 1) forwards;
+}
+
+@keyframes wipeIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0%); }
+}
+
+@keyframes wipeOut {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(100%); }
+}
