@@ -331,11 +331,11 @@
         <div
           class="flex-1 flex items-start justify-center overflow-hidden rounded-xl shadow-md"
         >
-          <!-- <img
+          <img
             src="/PROJET 1/webp/Tests.webp"
             alt="Tests d'utilisabilité"
             class="w-full h-72 scale-100 origin-center"
-          /> -->
+          />
         </div>
       </div>
 
