@@ -21,7 +21,7 @@ export const translations = {
       voirRendu: "Voir le rendu",
       wip: "Work in progress",
       decouvririSite: "D\u00E9couvrir le projet",
-      enSavoirPlusBtn: "En savoir plus",
+      enSavoirPlusBtn: "Work in Progress",
     },
     about: {
       title:
