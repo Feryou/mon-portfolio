@@ -87,7 +87,7 @@ export const translations = {
       kpiTitle: "Indicateurs de performance",
       kpi1: "Nombre d\u2019utilisateurs",
       kpi2: "Messages envoy\u00E9s dans l\u2019application",
-      kpi3: "Ville mises en favoris",
+      kpi3: "Villes mises en favoris",
       conclusion:
         "Ce projet m\u2019a permis de renforcer ma m\u00E9thodologie UX dans un contexte contraint, tout en d\u00E9veloppant une approche UI orient\u00E9e clart\u00E9, accessibilit\u00E9 et engagement",
       precedent: "Pr\u00E9c\u00E9dent",

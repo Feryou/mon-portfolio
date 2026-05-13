@@ -11,7 +11,7 @@ import { wipePhase } from './composables/usePageTransition'
     <main class="flex-grow">
       <router-view />
     </main>
-    <FooterComponent class="mb-20" />
+    <FooterComponent class="mb-5" />
   </div>
 </template>
 

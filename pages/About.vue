@@ -10,11 +10,11 @@
       >
         <div class="flex justify-center animate-slideInLeft">
           <img
-            src="/feryel.png"
-            alt="Illustration"
-            class="w-full mx-auto hover:scale-105 transition-transform duration-500 rounded-3xl"
-            style="mix-blend-mode: screen"
-          />
+  src="/perso.gif"
+  alt="Illustration"
+  class="w-1/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
+  style="mix-blend-mode: screen"
+/>
         </div>
 
         <div class="flex flex-col justify-center items-start space-y-6">
@@ -110,7 +110,7 @@
 
     <div
       ref="sectionSkills"
-      class="w-full max-w-7xl mx-auto px-6 md:px-16 mt-20 pb-12 animate-on-scroll"
+      class="w-full max-w-7xl mx-auto px-6 md:px-16 mt-20 pb-32 animate-on-scroll"
     >
       <h2 class="text-3xl md:text-4xl font-semibold mb-2">
         {{ t("about.competencesTitre") }}

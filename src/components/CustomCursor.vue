@@ -54,7 +54,10 @@ const animate = () => {
 }
 
 onMounted(() => {
-  isTouchDevice.value = window.matchMedia('(hover: none)').matches
+  isTouchDevice.value =
+    window.matchMedia('(hover: none)').matches ||
+    window.matchMedia('(pointer: coarse)').matches
+
   if (isTouchDevice.value) return
 
   document.body.classList.add('has-custom-cursor')
