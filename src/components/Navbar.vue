@@ -15,13 +15,16 @@
       <router-link to="/about" class="hover:underline whitespace-nowrap">{{ t("nav.aPropos") }}</router-link>
     </div>
 
-    <!-- Burger uniquement sur mobile -->
-    <img
-      src="/Menu-burger.png"
-      alt="Menu"
-      class="w-10 h-10 cursor-pointer z-40 lg:hidden"
+    <!-- Burger SVG uniquement sur mobile -->
+    <button
+      class="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer z-40"
       @click="toggleMenu"
-    />
+      aria-label="Ouvrir le menu"
+    >
+      <span class="block w-6 h-0.5 bg-black transition-all duration-300" :class="isMenuOpen ? 'rotate-45 translate-y-2' : ''"></span>
+      <span class="block w-6 h-0.5 bg-black transition-all duration-300" :class="isMenuOpen ? 'opacity-0' : ''"></span>
+      <span class="block w-6 h-0.5 bg-black transition-all duration-300" :class="isMenuOpen ? '-rotate-45 -translate-y-2' : ''"></span>
+    </button>
 
     <Transition name="slide-up">
       <div
