@@ -11,8 +11,8 @@
     <!-- Liens toujours visibles sur desktop -->
     <div class="hidden lg:flex space-x-8 text-xl font-medium mr-8">
       <a href="#" @click.prevent="goToProjects" class="hover:underline whitespace-nowrap cursor-pointer">{{ t("nav.projetsUx") }}</a>
-      <router-link to="/autres-projets" class="hover:underline whitespace-nowrap">{{ t("nav.autres") }}</router-link>
       <router-link to="/about" class="hover:underline whitespace-nowrap">{{ t("nav.aPropos") }}</router-link>
+      <router-link to="/autres-projets" class="hover:underline whitespace-nowrap">{{ t("nav.autres") }}</router-link>
     </div>
 
     <!-- Burger SVG uniquement sur mobile -->
@@ -32,8 +32,8 @@
         class="fixed inset-0 bg-white text-black flex flex-col justify-center items-center space-y-8 text-2xl font-semibold z-30 lg:hidden"
       >
         <a href="#" @click.prevent="goToProjects" class="hover:underline cursor-pointer">{{ t("nav.projetsUx") }}</a>
-        <router-link to="/autres-projets" @click="closeMenu" class="hover:underline">{{ t("nav.autres") }}</router-link>
         <router-link to="/about" @click="closeMenu" class="hover:underline">{{ t("nav.aPropos") }}</router-link>
+        <router-link to="/autres-projets" @click="closeMenu" class="hover:underline">{{ t("nav.autres") }}</router-link>
         <button @click="closeMenu" class="mt-12 text-sm underline">{{ t("nav.fermer") }}</button>
       </div>
     </Transition>
