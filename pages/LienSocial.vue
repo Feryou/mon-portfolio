@@ -287,7 +287,7 @@
           class="w-full md:w-1/2 h-auto object-cover rounded-xl"
         />
         <div
-          class="w-full md:w-1/3 bg-[#A1DFCC] rounded-lg p-5 md:p-6 text-black text-center text-lg font-light leading-relaxed"
+          class="w-full md:w-1/3 bg-[#A1DFCC] rounded-lg p-5 md:p-7 text-black text-center text-lg font-light leading-relaxed"
         >
           {{ t("lienSocial.storyboardNote") }}
         </div>

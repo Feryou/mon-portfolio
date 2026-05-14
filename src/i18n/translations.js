@@ -249,7 +249,7 @@ export const translations = {
         "Documents <strong>d\u2019identifications</strong> de besoins de <strong>langue de cible de traduction</strong> donn\u00E9 \u00E0 l\u2019inscription scolaire pour int\u00E9grer la langue en back-office",
       storyboardTitle: "Storyboard de la solution en 2 \u00E9tapes",
       storyboardNote:
-        "Priorisation li\u00E9e aux deadlines : \u2192 R\u00E9aliser la traduction sur l\u2019ENT car le document d\u2019identification n\u00E9cessiterait l\u2019implication des \u00E9tablissements scolaires et leur accord",
+        "Priorisation li\u00E9e aux deadlines : R\u00E9aliser la traduction sur l\u2019ENT car le document d\u2019identification n\u00E9cessiterait l\u2019implication des \u00E9tablissements scolaires et leur accord",
       testsTitle: "Tests mod\u00E9r\u00E9 d\u2019utilisabilit\u00E9",
       testsIntro:
         "Nous avons r\u00E9alis\u00E9 des tests d\u2019utilisabilit\u00E9 avec 8 enseignants afin de tester <strong>notre solution de traduction</strong> et la possibilit\u00E9 de voir la langue cible de traduction dans les fiches d\u2019\u00E9l\u00E8ves des ENT.",
