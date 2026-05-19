@@ -72,7 +72,6 @@
               class="relative w-full flex flex-col items-center justify-center animate-on-scroll"
               :class="[`delay-${(index % 2) * 200}`]"
             >
-              <!-- Titre visible uniquement sur mobile, en dehors de la carte -->
               <h3 class="md:hidden relative z-10 text-lg font-bold text-left mb-2 w-full px-2">{{ project.title }}</h3>
               <div
                 :class="[
@@ -100,38 +99,17 @@
                   </h3>
                   <div class="w-16 md:w-20 h-0.5 bg-black mb-4"></div>
                   <router-link
-                    v-if="project.title === 'Lien social'"
-                    to="/lien-social"
+                    v-if="project.route"
+                    :to="`/${project.route}`"
                     class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
                   >
-                    {{ t("landing.decouvririSite") }}
-                  </router-link>
-                  <router-link
-                    v-else-if="project.title === 'Esquisse'"
-                    to="/Esquisse"
-                    class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
-                  >
-                    {{ t("landing.voirRendu") }}
-                  </router-link>
-                  <router-link
-                    v-else-if="project.title === 'Windmap'"
-                    to="/Windmap"
-                    class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
-                  >
-                    {{ t("landing.decouvrir") }}
-                  </router-link>
-                  <router-link
-                    v-else-if="project.title === 'Entrepreunariat'"
-                    to=""
-                    class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
-                  >
-                    {{ t("landing.wip") }}
+                    {{ project.cta }}
                   </router-link>
                   <button
                     v-else
                     class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
                   >
-                    {{ t("landing.enSavoirPlusBtn") }}
+                    {{ t("landing.wip") }}
                   </button>
                 </div>
               </div>
@@ -150,10 +128,10 @@
   const { t } = useI18n();
   
   const projects = [
-    { title: "Lien social", image: "/Pronote.webp" },
-    { title: "Esquisse", image: "ESQUISSE/webp/Esquisse.webp" },
-    { title: "Windmap", image: "/Windmap.webp" },
-    { title: "Journal de bord", image: "/journal_de_bord.webp" },
+    { title: "Module de traduction sur Pronote", image: "/Pronote.webp", route: "lien-social", cta: "Voir l'interface modifiée" },
+    { title: "Application mobile pour les artistes", image: "ESQUISSE/webp/Esquisse.webp", route: "Esquisse", cta: "Voir le rendu" },
+    { title: "Application mobile météo", image: "/Windmap.webp", route: "Windmap", cta: "Découvrir l'application" },
+    { title: "Copilote santé pour les patients", image: "/journal_de_bord.webp", route: "" },
   ];
   
   const projectRefs = ref([]);
