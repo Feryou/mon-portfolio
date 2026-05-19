@@ -69,9 +69,11 @@
           <template v-for="(project, index) in projects" :key="index">
             <div
               :ref="(el) => setProjectRef(el, index)"
-              class="relative w-full flex items-center justify-center animate-on-scroll"
+              class="relative w-full flex flex-col items-center justify-center animate-on-scroll"
               :class="[`delay-${(index % 2) * 200}`]"
             >
+              <!-- Titre visible uniquement sur mobile, en dehors de la carte -->
+              <h3 class="md:hidden relative z-10 text-lg font-bold text-left mb-2 w-full px-2">{{ project.title }}</h3>
               <div
                 :class="[
                   'absolute z-0 transition-all duration-500 animate-morph',
