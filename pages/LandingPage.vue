@@ -7,7 +7,7 @@
         class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-8 md:pt-20 gap-8 md:gap-22 relative pb-12"
       >
         <img
-          src="/Ampoule_home_page.png"
+          src="/Ampoule_home_page.webp"
           alt="Ampoule"
           loading="eager"
           class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-8.5 md:-mt-21 animate-slideInLeft"
