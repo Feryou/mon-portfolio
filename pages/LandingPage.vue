@@ -27,13 +27,13 @@
             {{ t("landing.intro") }}<br />
             {{ t("landing.intro2") }}
           </p>
-          <router-link to="/about" class="inline-block self-center lg:self-start">
-            <button
-          class="mt-4 mb-20 md:mb-4 px-8 py-4 border border-black rounded-full text-base md:text-lg hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect animate-slideUp delay-400"
-          style="opacity: 0; animation-fill-mode: forwards">
-          {{ t("landing.enSavoirPlus") }}
-          </button>
-          </router-link>
+          <router-link 
+  to="/about" 
+  class="self-center lg:self-start mt-4 mb-20 md:mb-4 px-8 py-4 border border-black rounded-full text-base md:text-lg hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect animate-slideUp delay-400 inline-block"
+  style="opacity: 0; animation-fill-mode: forwards"
+>
+  {{ t("landing.enSavoirPlus") }}
+</router-link>
         </div>
   
         <div
