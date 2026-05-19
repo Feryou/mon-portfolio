@@ -10,14 +10,20 @@
       >
         <div class="flex justify-center animate-slideInLeft">
           <img
-  src="/perso.gif"
-  alt="Illustration"
-  class="w-1/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
-  style="mix-blend-mode: screen"
-/>
+            src="/perso.gif"
+            alt="Illustration"
+            class="w-1/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
+            style="mix-blend-mode: screen"
+          />
         </div>
 
         <div class="flex flex-col justify-center items-start space-y-6">
+
+          <!-- Badge nom -->
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full w-fit shadow-sm animate-slideUp" style="border: 2px solid #93CFC5">
+          <span class="text-sm font-medium text-gray-700">Feryel Khelifi</span>
+          </div>
+
           <h1
             class="text-3xl md:text-4xl leading-snug font-mono animate-slideUp"
           >
@@ -37,7 +43,7 @@
             {{ t("about.p2") }}
           </p>
           <a
-            href="/CV_Feryel_FR.pdf"
+          href="/CV_Feryel_FR.pdf"
             target="_blank"
             rel="noopener"
             class="mt-6 md:mt-2 px-8 py-3 border-2 border-black rounded-full hover:bg-[#9be4c4] hover:text-black transition font-medium text-lg self-start btn-hover-effect animate-slideUp delay-400"
