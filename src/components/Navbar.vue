@@ -2,8 +2,8 @@
   <nav
     class="border border-black rounded-[2rem] px-6 py-4 flex items-center w-full max-w-7xl mx-auto mt-6 relative z-30"
   >
-    <router-link to="/">
-      <img src="/logo.png" alt="" class="h-10 md:h-12 w-auto m-4" />
+    <router-link to="/" aria-label="Accueil">
+    <img src="/logo.png" alt="Logo Feryel Khelifi" class="h-10 md:h-12 w-auto m-4" />
     </router-link>
 
     <div class="flex-1"></div>
