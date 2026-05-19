@@ -64,53 +64,72 @@
           <div class="w-32 h-0.5 bg-[#9be4c4]"></div>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 px-2 pb-16 md:pb-32 place-items-center w-full max-w-6xl relative"
+          class="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-16 px-2 pb-16 md:pb-32 place-items-center w-full max-w-6xl relative"
         >
           <template v-for="(project, index) in projects" :key="index">
             <div
               :ref="(el) => setProjectRef(el, index)"
-              class="relative w-full flex flex-col items-center justify-center animate-on-scroll"
+              class="w-full flex flex-col items-center justify-center animate-on-scroll"
               :class="[`delay-${(index % 2) * 200}`]"
             >
-              <h3 class="md:hidden relative z-10 text-lg font-bold text-left mb-2 w-full px-2">{{ project.title }}</h3>
-              <div
-                :class="[
-                  'absolute z-0 transition-all duration-500 animate-morph',
-                  index % 2 === 0
-                    ? '-top-4 md:-top-6 -left-4 md:-left-6'
-                    : '-top-4 md:-top-6 -right-4 md:-right-6',
-                  'w-12 h-12 md:w-24 md:h-24 bg-[#9be4c4] rounded-full',
-                ]"
-                :style="{ animationDelay: `${index * 2}s` }"
-              ></div>
-              <div
-                class="relative z-10 group w-full md:max-w-md h-[220px] md:h-[270px] overflow-hidden rounded-[30px] bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_-10px_rgba(155,228,196,0.5)] border border-[#9be4c4]/40 shadow-[0_2px_12px_rgba(0,0,0,0.06)] focus-within:-translate-y-2 focus-within:shadow-[0_20px_60px_-10px_rgba(155,228,196,0.5)]"
-              >
-                <img
-                  :src="project.image"
-                  :alt="project.title"
-                  class="w-full h-full object-cover rounded-[30px] z-0"
-                />
+              <!-- Titre visible uniquement sur mobile -->
+              <div class="md:hidden relative w-full px-2 mb-6">
+                <span class="block text-4xl font-bold text-gray-800 select-none leading-none mb-3">
+                  {{ String(index + 1).padStart(2, '0') }}
+                </span>
+                <h3 class="text-lg font-bold text-left">{{ project.title }}</h3>
+              </div>
+
+              <!-- Wrapper séparé pour cercles + carte -->
+              <div class="relative w-full md:max-w-md">
                 <div
-                  class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out bg-white/80 backdrop-blur-md rounded-[30px] flex flex-col items-center justify-center text-center z-10 px-4"
+                  :class="[
+                    'absolute z-0 transition-all duration-500 animate-morph',
+                    index % 2 === 0
+                      ? '-top-4 md:-top-6 -left-4 md:-left-6'
+                      : '-top-4 md:-top-6 -right-4 md:-right-6',
+                    'w-12 h-12 md:w-24 md:h-24 bg-[#9be4c4] rounded-full',
+                  ]"
+                  :style="{ animationDelay: `${index * 2}s` }"
+                ></div>
+
+                <!-- Lien invisible couvrant toute la carte sur mobile -->
+                <router-link
+                  v-if="project.route"
+                  :to="`/${project.route}`"
+                  class="md:hidden absolute inset-0 z-20"
+                  aria-label="`Voir le projet ${project.title}`"
+                ></router-link>
+
+                <div
+                  class="relative z-10 group w-full h-[220px] md:h-[270px] overflow-hidden rounded-[30px] bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_-10px_rgba(155,228,196,0.5)] border border-[#9be4c4]/40 shadow-[0_2px_12px_rgba(0,0,0,0.06)] focus-within:-translate-y-2 focus-within:shadow-[0_20px_60px_-10px_rgba(155,228,196,0.5)]"
                 >
-                  <h3 class="text-xl md:text-2xl font-semibold mb-2">
-                    {{ project.title }}
-                  </h3>
-                  <div class="w-16 md:w-20 h-0.5 bg-black mb-4"></div>
-                  <router-link
-                    v-if="project.route"
-                    :to="`/${project.route}`"
-                    class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
+                  <img
+                    :src="project.image"
+                    :alt="project.title"
+                    class="w-full h-full object-cover rounded-[30px] z-0"
+                  />
+                  <div
+                    class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out bg-white/80 backdrop-blur-md rounded-[30px] flex flex-col items-center justify-center text-center z-10 px-4"
                   >
-                    {{ project.cta }}
-                  </router-link>
-                  <button
-                    v-else
-                    class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
-                  >
-                    {{ t("landing.wip") }}
-                  </button>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2">
+                      {{ project.title }}
+                    </h3>
+                    <div class="w-16 md:w-20 h-0.5 bg-black mb-4"></div>
+                    <router-link
+                      v-if="project.route"
+                      :to="`/${project.route}`"
+                      class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
+                    >
+                      {{ project.cta }}
+                    </router-link>
+                    <button
+                      v-else
+                      class="px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#9be4c4]"
+                    >
+                      {{ t("landing.wip") }}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
