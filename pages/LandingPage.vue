@@ -28,7 +28,7 @@
           </p>
           <router-link to="/about" class="inline-block self-center lg:self-start">
             <button
-              class="mt-4 mb-20 md:mb-4 px-6 py-2 border border-black rounded-full text-base md:text-lg hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect animate-slideUp delay-400"
+              class="mt-4 mb-20 md:mb-4 px-6 py-3 border border-black rounded-full text-base md:text-lg hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect animate-slideUp delay-400"
               style="opacity: 0; animation-fill-mode: forwards"
             >
               {{ t("landing.enSavoirPlus") }}
@@ -77,7 +77,7 @@
                 <span class="block text-4xl font-bold text-gray-800 select-none leading-none mb-3">
                   {{ String(index + 1).padStart(2, '0') }}
                 </span>
-                <h3 class="text-lg font-bold text-left">{{ project.title }}</h3>
+                <h2 class="text-lg font-bold text-left">{{ project.title }}</h2>
               </div>
 
               <!-- Wrapper séparé pour cercles + carte -->
@@ -98,7 +98,7 @@
                   v-if="project.route"
                   :to="`/${project.route}`"
                   class="md:hidden absolute inset-0 z-20"
-                  aria-label="`Voir le projet ${project.title}`"
+                  :aria-label="`Voir le projet ${project.title}`"
                 ></router-link>
 
                 <div
@@ -112,9 +112,9 @@
                   <div
                     class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out bg-white/80 backdrop-blur-md rounded-[30px] flex flex-col items-center justify-center text-center z-10 px-4"
                   >
-                    <h3 class="text-xl md:text-2xl font-semibold mb-2">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-2">
                       {{ project.title }}
-                    </h3>
+                    </h2>
                     <div class="w-16 md:w-20 h-0.5 bg-black mb-4"></div>
                     <router-link
                       v-if="project.route"
