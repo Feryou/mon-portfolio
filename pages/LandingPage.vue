@@ -3,10 +3,10 @@
 
     <Navbar />
 
-    <!-- HERO -->
+    <!-- HERO (FIX ALIGNEMENT GLOBAL) -->
     <section
-      class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-0 md:pt-2 lg:pt-4 gap-8 md:gap-22 relative pb-12"
-    >
+  class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-[2px] md:pt-[4px] lg:pt-[6px] gap-8 md:gap-22 relative pb-12"
+>
       <!-- IMAGE HERO -->
       <img
         src="/Ampoule_home_page.webp"
@@ -19,9 +19,9 @@
         class="w-full max-w-xs md:max-w-md aspect-square object-contain animate-float"
       />
 
-      <!-- TEXT -->
+      <!-- TEXT (descend avec l’image naturellement) -->
       <div
-        class="text-center lg:text-left space-y-6 lg:ml-12 flex flex-col justify-center w-full max-w-xl"
+        class="text-center lg:text-left space-y-6 lg:ml-12 flex flex-col justify-center w-full max-w-xl -mt-2 md:mt-0"
       >
         <h1 class="text-2xl md:text-4xl font-bold animate-slideUp whitespace-nowrap">
           {{ t("landing.hello") }}
@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <!-- PROJETS -->
+    <!-- PROJETS (inchangé) -->
     <section id="projets" class="flex flex-col items-center mt-16 md:mt-64">
       <div class="w-full max-w-6xl px-6 md:px-2 mb-14 md:-translate-y-20">
         <h1 class="text-2xl font-semibold mb-4">
@@ -88,8 +88,8 @@
               </h2>
             </div>
 
-            <!-- CARD -->
             <div class="relative w-full md:max-w-md">
+
               <!-- MORPH -->
               <div
                 :class="[
@@ -102,7 +102,7 @@
                 :style="{ animationDelay: `${index * 2}s` }"
               ></div>
 
-              <!-- MOBILE LINK -->
+              <!-- LINK MOBILE -->
               <router-link
                 v-if="project.route"
                 :to="`/${project.route}`"
@@ -149,6 +149,7 @@
                   </button>
                 </div>
               </div>
+
             </div>
           </div>
         </template>
