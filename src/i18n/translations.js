@@ -2,7 +2,7 @@ export const translations = {
   fr: {
     nav: {
       projetsUx: "Projets UX",
-      autres: "Autres",
+      autres: "Autres Projets",
       aPropos: "\u00C0 propos",
       fermer: "Fermer",
     },
