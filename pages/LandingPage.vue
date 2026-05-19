@@ -9,6 +9,7 @@
         <img
           src="/Ampoule_home_page.png"
           alt="Ampoule"
+          loading="eager"
           class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-8.5 md:-mt-21 animate-slideInLeft"
         />
         <div
@@ -107,6 +108,9 @@
                   <img
                     :src="project.image"
                     :alt="project.title"
+                    loading="lazy"
+                    width="448"
+                    height="270"
                     class="w-full h-full object-cover rounded-[30px] z-0"
                   />
                   <div
