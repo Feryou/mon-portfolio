@@ -6,14 +6,16 @@
       <section
         class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-8 md:pt-20 gap-8 md:gap-22 relative pb-12"
       >
-        <img
-          src="/Ampoule_home_page.webp"
-          alt="Ampoule"
-          width="600"
-          height="600"
-          loading="eager"
-          class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-8.5 md:-mt-21 animate-slideInLeft"
-        />
+      <img
+  src="/Ampoule_home_page.webp"
+  alt="Ampoule"
+  width="600"
+  height="600"
+  fetchpriority="high"
+  loading="eager"
+  decoding="async"
+  class="w-full max-w-xs md:max-w-md aspect-square object-contain mb-8 lg:mb-0 animate-float"
+/>
         <div
           class="text-center lg:text-left space-y-6 lg:ml-12 flex flex-col justify-center w-full max-w-xl"
         >
