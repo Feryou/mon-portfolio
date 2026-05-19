@@ -10,11 +10,11 @@
       >
         <div class="flex justify-center animate-slideInLeft">
           <img
-            src="/perso.gif"
-            alt="Illustration"
-            class="w-1/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
-            style="mix-blend-mode: screen"
-          />
+          src="/perso.gif"
+          alt="Illustration"
+          class="w-2/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
+          style="mix-blend-mode: screen"
+/>
         </div>
 
         <div class="flex flex-col justify-center items-start space-y-6">
