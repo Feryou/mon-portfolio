@@ -9,12 +9,18 @@
         class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12 items-center"
       >
         <div class="flex justify-center animate-slideInLeft">
-          <img
-          src="/perso.gif"
-          alt="Illustration"
-          class="w-2/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
-          style="mix-blend-mode: screen"
-/>
+          <div class="flex justify-center animate-slideInLeft">
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="w-2/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
+    style="mix-blend-mode: screen"
+  >
+    <source src="/perso.mp4" type="video/mp4">
+  </video>
+</div>
         </div>
 
         <div class="flex flex-col justify-center items-start space-y-6">
