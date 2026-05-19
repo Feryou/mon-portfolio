@@ -14,7 +14,7 @@ export const translations = {
       intro:
         "J\u2019aime transformer les id\u00E9es en exp\u00E9riences lisibles, fluides et coh\u00E9rentes.",
       intro2:
-        "Ce que je cherche aujourd\u2019hui : continuer \u00E0 apprendre, collaborer, et am\u00E9liorer l\u2019exp\u00E9rience des utilisateurs \u00E0 chaque \u00E9tape.",
+        "Ce que je cherche aujourd\u2019hui : continuer \u00E0 apprendre, collaborer et am\u00E9liorer l\u2019exp\u00E9rience des utilisateurs \u00E0 chaque \u00E9tape.",
       enSavoirPlus: "En savoir plus",
       projetsUx: "Projets UX",
       decouvrir: "D\u00E9couvrir l\u2019application",
