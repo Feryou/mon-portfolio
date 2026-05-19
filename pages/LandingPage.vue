@@ -10,6 +10,7 @@
           src="/Ampoule_home_page.webp"
           alt="Ampoule"
           loading="eager"
+          fetchpriority="high"
           class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-8.5 md:-mt-21 animate-slideInLeft"
         />
         <div
