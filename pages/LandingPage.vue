@@ -147,9 +147,9 @@
   const { t } = useI18n();
   
   const projects = [
-    { title: "Module de traduction sur Pronote", image: "/Pronote.webp", route: "lien-social", cta: "Voir l'interface modifiée" },
-    { title: "Application mobile pour les artistes", image: "ESQUISSE/webp/Esquisse.webp", route: "Esquisse", cta: "Voir le rendu" },
-    { title: "Application mobile météo", image: "/Windmap.webp", route: "Windmap", cta: "Découvrir l'application" },
+    { title: "Module de traduction sur Pronote", image: "/Pronote.webp", route: "lien-social", cta: "Voir le case study" },
+    { title: "Application mobile pour les artistes", image: "ESQUISSE/webp/Esquisse.webp", route: "Esquisse", cta: "Voir le case study" },
+    { title: "Application mobile météo", image: "/Windmap.webp", route: "Windmap", cta: "Voir le case study" },
     { title: "Copilote santé pour les patients", image: "/journal_de_bord.webp", route: "" },
   ];
   
