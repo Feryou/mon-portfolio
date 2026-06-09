@@ -267,32 +267,8 @@
       </div>
     </div>
 
-    <div
-      id="storyboard"
-      ref="storyboard"
-      class="w-full max-w-7xl mx-auto bg-white px-6 md:px-16 mt-52 mb-32 text-black text-left animate-on-scroll"
-    >
-      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
-        <div class="flex-1">
-          <h1 class="text-3xl font-semibold mb-1">
-            {{ t("lienSocial.storyboardTitle") }}
-          </h1>
-          <div class="w-32 h-1 bg-[#A1DFCC] mb-10 section-line"></div>
-        </div>
-      </div>
-      <div class="flex flex-col md:flex-row gap-8 items-center justify-between">
-        <img
-          src="/PROJET 1/webp/Storyboard.webp"
-          alt="Storyboard de la solution en 2 étapes"
-          class="w-full md:w-1/2 h-auto object-cover rounded-xl"
-        />
-        <div
-          class="w-full md:w-1/3 bg-[#A1DFCC] rounded-lg p-5 md:p-7 text-black text-center text-lg font-light leading-relaxed"
-        >
-          {{ t("lienSocial.storyboardNote") }}
-        </div>
-      </div>
-    </div>
+    
+    
 
     <div
       id="tests"
