@@ -96,13 +96,21 @@
         {{ t("lienSocial.comprendreTitle") }}
       </h1>
       <div class="w-32 h-0.5 bg-[#A1DFCC] mb-4 section-line"></div>
-      <p class="mb-10">
-        {{ t("lienSocial.comprendreP1") }}
-      </p>
 
-      <p class="mb-10">
-        {{ t("lienSocial.comprendreP2") }}
-      </p>
+      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center mt-6">
+        <div class="flex-1">
+          <p class="mb-10" v-html="t('lienSocial.comprendreP1')"></p>
+          <p class="mb-10" v-html="t('lienSocial.comprendreP2')"></p>
+        </div>
+
+        <div class="flex-1 flex justify-center">
+          <img
+            src="/mockup.webp"
+            alt="Mockup Pronote - Interface de traduction"
+            class="w-full max-w-2xl rounded-2xl shadow-lg"
+          />
+        </div>
+      </div>
     </div>
 
     <div
@@ -266,9 +274,6 @@
         </div>
       </div>
     </div>
-
-    
-    
 
     <div
       id="tests"
