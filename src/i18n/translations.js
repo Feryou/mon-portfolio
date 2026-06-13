@@ -205,9 +205,10 @@ export const translations = {
       tocIterations: "Itérations du prototype",
       tocEtapes: "Prochaines étapes",
       tocOperationnelle: "Partie opérationnelle du projet",
+      tocPresentation: "Présentation finale",
       comprendreTitle: "Comprendre le projet",
       comprendreP1:
-        "Les enseignants du secondaire passent un temps considérable à tenter de joindre des <strong>familles allophones ou éloignées du numérique</strong> avec des outils pensés pour des parents déjà connectés et francophones. Résultat\u00A0: une <strong>communication qui échoue avant même d'avoir commencé</strong>.",
+        "Les enseignants du secondaire passent un temps considérable à tenter de joindre des <strong>familles allophones ou éloignées du numérique</strong> \u2014 avec des outils pensés pour des parents déjà connectés et francophones. Résultat\u00A0: une <strong>communication qui échoue avant même d'avoir commencé</strong>.",
       comprendreP2:
         "<strong>Ma mission\u00A0:</strong> comprendre pourquoi ce lien se rompt, identifier les vrais <strong>points de friction</strong> côté enseignants et familles, puis concevoir une solution intégrée directement dans les outils existants \u2014 sans alourdir la <strong>charge mentale</strong> des équipes pédagogiques. Une <strong>fonctionnalité de traduction</strong> a ainsi été conçue au sein même de <strong>Pronote</strong>.",
       rechercheTitle: "UX Research",
@@ -229,6 +230,10 @@ export const translations = {
         "70% des communications avec les familles sont une charge mentale supplémentaire",
       rechQuantLi2:
         "SMS Whatsapp et les emails professionnels sont souvent les seuls moyens les plus utilisés pour aider les familles",
+      insightsTitle: "Insights clés :",
+      insight1: "Les enfants avec des parents déconnectés ne sont pas forcément à l'aise avec le <strong>numérique</strong>",
+      insight2: "Les familles éloignées du numérique ne sont pas <strong>démissionnaires</strong> de la scolarité de leurs enfants",
+      insight3: "Le passage au <strong>\"tout-numérique\"</strong> a aggravé le manque de lien général et la <strong>méfiance vis-à-vis de l'institution</strong>",
       rechContrainte1:
         "Les contraintes de temps et d'accès au terrain nous ont empêchés d'interroger directement beaucoup de familles allophones et éloignées du numérique.",
       rechContrainte2:
@@ -291,6 +296,8 @@ export const translations = {
       budget2: "Partie design pour perfectionner les aspects de la recherche",
       budget3:
         "Deviser les solutions de traduction et vocalisation (IA, partenariats, abonnements ?)",
+      presentationTitle: "Restitution devant Pronote & Docaposte",
+      presentationP: "À l'issue du projet, nous avons présenté notre démarche et notre solution devant les <strong>équipes produit de Pronote et Docaposte</strong> commanditaires du projet. Une occasion de défendre nos choix de design, d'expliquer notre raisonnement UX et de recevoir des retours terrain de professionnels du secteur.",
       precedent: "Précédent",
       suivant: "Suivant",
     },
@@ -510,9 +517,10 @@ export const translations = {
       tocIterations: "Prototype iterations",
       tocEtapes: "Next steps",
       tocOperationnelle: "Operational part of the project",
+      tocPresentation: "Final presentation",
       comprendreTitle: "Understanding the project",
       comprendreP1:
-        "Secondary school teachers spend significant time trying to reach <strong>allophone or digitally disconnected families</strong> using tools designed for parents who are already online and French-speaking. The result: <strong><strong>communication that fails before it even starts</strong></strong>.",
+        "Secondary school teachers spend significant time trying to reach <strong>allophone or digitally disconnected families</strong> \u2014 using tools designed for parents who are already online and French-speaking. The result: <strong><strong>communication that fails before it even starts</strong></strong>.",
       comprendreP2:
         "<strong>My mission:</strong> understand why this link breaks down, identify the real <strong>friction points</strong> on both the teacher and family sides, then design a solution integrated directly into existing tools \u2014 without adding to the <strong>mental load</strong> of teaching staff. A <strong>translation feature</strong> was designed within <strong>Pronote</strong> itself.",
       rechercheTitle: "UX Research",
@@ -534,6 +542,10 @@ export const translations = {
         "70% of communications with families are an additional mental burden",
       rechQuantLi2:
         "SMS, WhatsApp and professional emails are often the only most-used means to help families",
+      insightsTitle: "Key insights:",
+      insight1: "Children with digitally disconnected parents are not necessarily comfortable with <strong>digital tools</strong>",
+      insight2: "Families disconnected from digital tools are not <strong>disengaged</strong> from their children's schooling",
+      insight3: "The shift to <strong>\"all-digital\"</strong> has worsened the lack of connection and <strong>distrust towards the institution</strong>",
       rechContrainte1:
         "Time and field access constraints prevented us from directly interviewing many allophone and digitally disconnected families.",
       rechContrainte2:
@@ -594,6 +606,8 @@ export const translations = {
       budget2: "Design part to refine research aspects",
       budget3:
         "Estimate translation and vocalization solutions (AI, partnerships, subscriptions?)",
+      presentationTitle: "Final pitch to Pronote & Docaposte",
+      presentationP: "At the end of the project, we presented our approach and solution to the <strong>product teams at Pronote and Docaposte</strong> — the project's clients. An opportunity to defend our design choices, explain our UX reasoning, and receive real-world feedback from industry professionals.",
       precedent: "Previous",
       suivant: "Next",
     },

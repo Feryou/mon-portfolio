@@ -84,6 +84,7 @@
         { label: t('lienSocial.tocIterations'), id: 'iterations' },
         { label: t('lienSocial.tocEtapes'), id: 'etapes' },
         { label: t('lienSocial.tocOperationnelle'), id: 'operationnelle' },
+        { label: t('lienSocial.tocPresentation'), id: 'presentation' },
       ]"
     />
 
@@ -107,7 +108,7 @@
           <img
             src="/mockup.webp"
             alt="Mockup Pronote - Interface de traduction"
-            class="w-full max-w-2xl rounded-2xl shadow-lg"
+            class="w-full max-w-md rounded-2xl shadow-lg"
           />
         </div>
       </div>
@@ -180,6 +181,30 @@
               <li>{{ t("lienSocial.rechQuantLi1") }}</li>
               <li>{{ t("lienSocial.rechQuantLi2") }}</li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-12 mt-4">
+        <p class="text-lg font-semibold underline mb-6">{{ t("lienSocial.insightsTitle") }}</p>
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-5 border border-[#A1DFCC] rounded-2xl p-4 md:p-5">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#A1DFCC] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#085041" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17H14.25M6 3H18A2 2 0 0120 5V15A2 2 0 0118 17H6A2 2 0 014 15V5A2 2 0 016 3ZM4 20H20" /></svg>
+            </div>
+            <p class="text-lg leading-relaxed" v-html="t('lienSocial.insight1')"></p>
+          </div>
+          <div class="flex items-center gap-5 border border-[#A1DFCC] rounded-2xl p-4 md:p-5">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#A1DFCC] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#085041" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /></svg>
+            </div>
+            <p class="text-lg leading-relaxed" v-html="t('lienSocial.insight2')"></p>
+          </div>
+          <div class="flex items-center gap-5 border border-[#A1DFCC] rounded-2xl p-4 md:p-5">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#A1DFCC] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#085041" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" /></svg>
+            </div>
+            <p class="text-lg leading-relaxed" v-html="t('lienSocial.insight3')"></p>
           </div>
         </div>
       </div>
@@ -525,6 +550,30 @@
       </div>
     </div>
     <div
+      id="presentation"
+      ref="presentation"
+      class="w-full max-w-7xl mx-auto bg-white px-6 md:px-16 mt-52 mb-32 text-black text-left animate-on-scroll"
+    >
+      <h1 class="text-3xl font-semibold mb-1">
+        {{ t("lienSocial.presentationTitle") }}
+      </h1>
+      <div class="w-32 h-1 bg-[#A1DFCC] mb-10 section-line"></div>
+
+      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
+        <div class="flex-1">
+          <p class="text-lg leading-relaxed" v-html="t('lienSocial.presentationP')"></p>
+        </div>
+        <div class="flex-1">
+          <img
+            src="/presentation.jpg"
+            alt="Présentation du projet devant les équipes Pronote et Docaposte"
+            class="w-full rounded-2xl shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
       class="fixed bottom-0 left-0 right-0 z-50 px-6 md:px-16 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-t border-gray-100"
     >
       <router-link
@@ -580,6 +629,7 @@ const tests = ref(null);
 const iterations = ref(null);
 const etapes = ref(null);
 const operationnelle = ref(null);
+const presentation = ref(null);
 let observer = null;
 
 onMounted(() => {
@@ -607,6 +657,7 @@ onMounted(() => {
     iterations,
     etapes,
     operationnelle,
+    presentation,
   ];
   elements.forEach((el) => {
     if (el.value) {

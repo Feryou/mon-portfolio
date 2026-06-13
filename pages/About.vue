@@ -95,30 +95,7 @@
       </p>
     </div>
 
-    <div
-      ref="sectionDT"
-      class="w-full max-w-7xl mx-auto px-6 md:px-16 mt-20 mb-16 text-black animate-on-scroll"
-    >
-      <h2 class="text-3xl md:text-4xl font-semibold mb-2">
-        {{ t("about.dtTitre") }}
-      </h2>
-      <div class="w-32 h-0.5 bg-[#9be4c4] mb-12 section-line"></div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div v-for="i in 4" :key="i" class="flex flex-col gap-4">
-          <div
-            class="bg-[#9be4c4] rounded-2xl px-5 py-6 text-center font-semibold text-lg leading-snug whitespace-pre-line h-28 flex items-center justify-center"
-          >
-            {{ t(`about.dt${i}Titre`) }}
-          </div>
-          <div
-            class="border border-[#9be4c4] rounded-2xl px-5 py-6 text-base text-center leading-relaxed flex-1"
-          >
-            {{ t(`about.dt${i}Desc`) }}
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div
       ref="sectionSkills"
