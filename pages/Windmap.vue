@@ -53,13 +53,20 @@
         {{ t("windmap.comprendreTitle") }}
       </h1>
       <div class="w-32 h-0.5 bg-[#b7d2f7] mb-4 section-line"></div>
-      <p class="mb-10">
-        {{ t("windmap.comprendreP1") }}
-      </p>
 
-      <p class="mb-10">
-        {{ t("windmap.comprendreP2") }}
-      </p>
+      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center mt-6">
+        <div class="flex-1">
+          <p class="mb-10" v-html="t('windmap.comprendreP1')"></p>
+          <p class="mb-10" v-html="t('windmap.comprendreP2')"></p>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img
+            src="/mockup_windmap.png"
+            alt="Mockup Windmap"
+            class="w-full max-w-md rounded-2xl shadow-lg"
+          />
+        </div>
+      </div>
 
       <div
         id="recherche"
@@ -70,10 +77,23 @@
             {{ t("windmap.rechercheTitle") }}
           </h1>
           <div class="w-32 h-0.5 bg-[#1a1a4e] mb-4 section-line"></div>
-          <p class="mb-6">
-            {{ t("windmap.rechercheP1") }}
-          </p>
-          <p class="mb-0" v-html="t('windmap.rechercheP2')"></p>
+          <p class="mb-6" v-html="t('windmap.rechercheP1')"></p>
+          <p class="mb-10" v-html="t('windmap.rechercheP2')"></p>
+
+          <p class="text-lg font-semibold underline mb-4">{{ t("windmap.benchmarkTitle") }}</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#223C8D] shrink-0"></span>
+              <span v-html="t('windmap.benchmark1')"></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-[#223C8D] shrink-0"></span>
+              <span v-html="t('windmap.benchmark2')"></span>
+            </li>
+          </ul>
+          <div class="border-l-4 border-[#223C8D] pl-6 py-2">
+            <p v-html="t('windmap.benchmarkInsight')"></p>
+          </div>
         </div>
         <div class="flex-1 flex items-center justify-center">
           <div
@@ -144,6 +164,8 @@
       <ul class="list-disc ml-8 mb-10 space-y-2">
         <li>{{ t("windmap.prototypeLi") }}</li>
       </ul>
+      <p class="text-lg font-semibold underline mb-3">{{ t("windmap.designTitle") }}</p>
+      <p class="text-lg" v-html="t('windmap.designP')"></p>
     </div>
 
     <div
@@ -182,6 +204,7 @@
           <ul class="list-disc ml-6 mb-10 space-y-1 text-lg text-gray-700">
             <li>{{ t("windmap.perspectivesLi1") }}</li>
             <li>{{ t("windmap.perspectivesLi2") }}</li>
+            <li v-html="t('windmap.perspectivesLi3')"></li>
           </ul>
 
           <h3 class="text-2xl font-semibold mb-6">
