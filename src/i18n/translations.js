@@ -152,6 +152,7 @@ export const translations = {
       tocRecherche: "UX Research",
       tocIdeation: "Idéation et prototypage",
       tocFonctionnalites: "Fonctionnalités",
+      tocPerspectives: "Perspectives",
       comprendreTitle: "Comprendre le projet",
       comprendreP1:
         "L'art s'est beaucoup démocratisé depuis des années grâce aux réseaux sociaux mais pourtant son expansion peut s'avérer complexe notamment à des fins professionnels.",
@@ -159,9 +160,12 @@ export const translations = {
         "L'idée de ce projet est de pouvoir démocratiser l'art en le rendant accessible peu importe le budget des participants. De plus, l'objectif est de faire aimer l'art sans pression et sans compétition dans un environnement ludique.",
       rechercheTitle: "UX Research",
       rechercheP1:
-        "Les contraintes de temps nous ont conduits à prioriser un entretien utilisateur ciblé.",
+        "Le format <strong>design sprint d'une semaine</strong> ne permettait pas de mener une recherche utilisateur extensive. J'ai donc fait le choix de prioriser <strong>un entretien utilisateur ciblé</strong> plutôt que plusieurs interviews superficielles — pour aller en profondeur plutôt qu'en largeur.",
       rechercheP2:
         "En une semaine, nous avons pu collecter des insights clés, nous permettant de construire un <strong>proto-persona</strong> et d'orienter efficacement la suite du projet.",
+      rechercheQuote: "\"J'ai envie d'être accompagnée à mon rythme dans ma reprise de l'art tout en restant dans ma bulle.\"",
+      rechercheQuoteAuthor: "Inès, 24 ans, étudiante",
+      rechercheInsight: "Cette phrase a orienté toute la conception : un environnement <strong>sans compétition</strong>, une progression <strong>personnalisée</strong>, et une expérience <strong>immersive et rassurante</strong>.",
       hmwLabel: "Problématique Design définie (How Might We) :",
       hmw: "Comment pourrions-nous créer un équilibre entre créativité et volonté de progression dans un environnement ludique et inspirant ?",
       ideationTitle: "Idéation et prototypage",
@@ -169,6 +173,10 @@ export const translations = {
         "Afin de trouver des idées de solutions, nous avons réalisé un atelier d'idéation avec mon équipe.",
       ideationP2:
         "En faisant du brainstorming et de la priorisation à l'aide de gommettes, nous avons pu décider d'une idée et d'un concept :",
+      ideationPistesTitle: "Pistes explorées et écartées :",
+      ideationPiste1: "<strong>Ateliers en boutique</strong> (type Cultura) — écarté car trop contraignant en termes d'horaires et de déplacement, en contradiction avec le besoin d'autonomie identifié en recherche.",
+      ideationPiste2: "<strong>Plateforme communautaire type réseau social</strong> — écarté car trop exposant et compétitif, à l'opposé du besoin de rester \"dans sa bulle\".",
+      ideationPiste3: "<strong>Application d'apprentissage gamifiée</strong> → retenu car elle combine accompagnement à son rythme, progression personnalisée et environnement sans pression.",
       ideationConcept1: "Une application numérique,",
       ideationConcept2: "Esquisse : compagnon créatif",
       ideationP3:
@@ -178,7 +186,7 @@ export const translations = {
       fonctionnalitesTitle:
         "Fonctionnalités phares de l'application :",
       fonctionnalitesP:
-        "Avant de réaliser le design de l'application, nous nous sommes lancés sur des wireframes papiers afin de réfléchir à un parcours d'écran à prioriser sur le maquettage. Voici une visualisation du wireframe papier avec le rendu final réalisé sur Figma :",
+        "Voici une visualisation du wireframe papier mis en regard du rendu final réalisé sur Figma :",
       feat1Title: "Gamification / suivi de progression",
       feat1Desc: "Challenges, jeux et défis évolutifs",
       feat2Title: "Recherche intuitive",
@@ -189,6 +197,13 @@ export const translations = {
       maquetteHF: "Maquette haute fidélité",
       wireframePapierTitle: "Wireframe papier",
       wireframePapierCta: "Cliquer pour voir le wireframe papier",
+      wireframePapierP1: "Avant toute maquette digitale, j'ai d'abord travaillé sur papier. Cette étape de wireframing basse fidélité m'a permis de <strong>tester rapidement les parcours</strong>, d'identifier les <strong>frictions potentielles</strong> et de valider la structure de l'interface avant d'investir du temps sur Figma.",
+      perspectivesTitle: "Perspectives",
+      perspectivesP: "Ce projet a été réalisé en <strong>une semaine</strong>, un format design sprint qui implique des compromis. Voici ce que j'aurais approfondi avec plus de temps :",
+      perspectives1: "<strong>Tests d'utilisabilité</strong> sur le prototype Figma avec 5 à 8 utilisateurs correspondant au proto-persona pour valider que l'interface répond réellement au besoin d'autonomie et de progression sans pression.",
+      perspectives2: "<strong>Itérations sur la gamification</strong>, tester si les défis et badges motivent sans créer de pression de performance, en contradiction avec le verbatim d'Inès.",
+      perspectives3: "<strong>Métriques de succès</strong> à mesurer : taux de complétion des tutoriels, fréquence de retour dans l'application, score de satisfaction sur l'aspect \"à mon rythme\".",
+      perspectives4: "<strong>Élargir la recherche</strong> à 5 profils supplémentaires pour valider que le besoin d'Inès est représentatif d'une cible plus large.",
       pageAccueil: "Page d'accueil",
       pageTutoriels: "Page tutoriels",
       pageMonCompte: "Page Mon Compte",
@@ -468,6 +483,7 @@ export const translations = {
       tocRecherche: "UX Research",
       tocIdeation: "Ideation and prototyping",
       tocFonctionnalites: "Features",
+      tocPerspectives: "Perspectives",
       comprendreTitle: "Understanding the project",
       comprendreP1:
         "Art has become much more democratized over the years thanks to social media, yet its expansion can prove complex, especially for professional purposes.",
@@ -475,9 +491,12 @@ export const translations = {
         "The idea of this project is to democratize art by making it accessible regardless of participants' budgets. Furthermore, the goal is to make people love art without pressure or competition in a fun environment.",
       rechercheTitle: "UX Research",
       rechercheP1:
-        "Time constraints led us to prioritize a targeted user interview.",
+        "The <strong>one-week design sprint</strong> format didn't allow for extensive user research. I chose to prioritize <strong>one in-depth user interview</strong> rather than several superficial ones — going deep rather than wide.",
       rechercheP2:
         "In one week, we were able to collect key insights, allowing us to build a <strong>proto-persona</strong> and effectively guide the rest of the project.",
+      rechercheQuote: "\"I want to be guided at my own pace as I get back into art, while staying in my own bubble.\"",
+      rechercheQuoteAuthor: "Inès, 24, student",
+      rechercheInsight: "This quote shaped the entire design direction: an environment <strong>without competition</strong>, <strong>personalized</strong> progression, and an <strong>immersive, reassuring</strong> experience.",
       hmwLabel: "Design problem statement (How Might We):",
       hmw: "How might we create a balance between creativity and the desire for progress in a fun and inspiring environment?",
       ideationTitle: "Ideation and prototyping",
@@ -485,6 +504,10 @@ export const translations = {
         "To find solution ideas, we conducted an ideation workshop with my team.",
       ideationP2:
         "Through brainstorming and prioritization using dot voting, we were able to decide on an idea and a concept:",
+      ideationPistesTitle: "Explored and discarded directions:",
+      ideationPiste1: "<strong>In-store workshops</strong> (like Cultura) — discarded as too constraining in terms of schedule and travel, contradicting the need for autonomy identified in research.",
+      ideationPiste2: "<strong>Community platform / social network</strong> — discarded as too exposing and competitive, the opposite of the need to stay \"in one's own bubble\".",
+      ideationPiste3: "<strong>Gamified learning app</strong> → retained because it combines self-paced guidance, personalized progression and a pressure-free environment.",
       ideationConcept1: "A digital application,",
       ideationConcept2: "Esquisse: creative companion",
       ideationP3:
@@ -493,7 +516,7 @@ export const translations = {
         "To start iterations, it will be necessary to plan a usability testing phase.",
       fonctionnalitesTitle: "Key features of the application:",
       fonctionnalitesP:
-        "Before designing the application, we started with paper wireframes to think about a screen flow to prioritize for the mockup. Here is a visualization of the paper wireframe with the final result made on Figma:",
+        "Here is a side-by-side view of the paper wireframe and the final result designed in Figma:",
       feat1Title: "Gamification / progress tracking",
       feat1Desc: "Challenges, games and evolving objectives",
       feat2Title: "Intuitive search",
@@ -504,6 +527,13 @@ export const translations = {
       maquetteHF: "High-fidelity mockup",
       wireframePapierTitle: "Paper wireframe",
       wireframePapierCta: "Click to watch the paper wireframe",
+      wireframePapierP1: "Before any digital mockup, I started on paper. This low-fidelity wireframing step allowed me to <strong>quickly test user flows</strong>, identify <strong>potential friction points</strong> and validate the interface structure before investing time in Figma.",
+      perspectivesTitle: "What I would have done with more time",
+      perspectivesP: "This project was completed in <strong>one week</strong> — a design sprint format that requires trade-offs. Here is what I would have explored further with more time:",
+      perspectives1: "<strong>Usability testing</strong> on the Figma prototype with 5 to 8 users matching the proto-persona — to validate that the interface truly meets the need for autonomy and pressure-free progression.",
+      perspectives2: "<strong>Gamification iterations</strong> — testing whether challenges and badges motivate without creating performance pressure, which would contradict Inès's verbatim.",
+      perspectives3: "<strong>Success metrics</strong> to measure: tutorial completion rate, app return frequency, satisfaction score around the \"at my own pace\" aspect.",
+      perspectives4: "<strong>Expanding the research</strong> to 5 additional profiles to validate that Inès's need is representative of a broader target audience.",
       pageAccueil: "Home page",
       pageTutoriels: "Tutorials page",
       pageMonCompte: "My Account page",

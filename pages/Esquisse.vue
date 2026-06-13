@@ -42,6 +42,7 @@
         { label: t('esquisse.tocRecherche'), id: 'recherche' },
         { label: t('esquisse.tocIdeation'), id: 'ideation' },
         { label: t('esquisse.tocFonctionnalites'), id: 'fonctionnalites' },
+        { label: t('esquisse.tocPerspectives'), id: 'perspectives' },
       ]"
     />
 
@@ -85,18 +86,21 @@
           <h1 class="text-2xl font-semibold mb-1">
             {{ t("esquisse.rechercheTitle") }}
           </h1>
-          <div class="w-32 h-0.5 bg-[#1a1a4e] mb-4 section-line"></div>
-          <p class="mb-6">
-            {{ t("esquisse.rechercheP1") }}
-          </p>
-          <p class="mb-0" v-html="t('esquisse.rechercheP2')"></p>
+          <div class="w-32 h-0.5 bg-[#1a1a4e] mb-8 section-line"></div>
+          <p class="mb-6" v-html="t('esquisse.rechercheP1')"></p>
+          <p class="mb-8" v-html="t('esquisse.rechercheP2')"></p>
+          <p v-html="t('esquisse.rechercheInsight')"></p>
         </div>
-        <div class="flex-1 md:w-1/2 flex items-center justify-center">
+        <div class="flex-1 md:w-1/2 flex flex-col gap-6">
           <img
             src="/ESQUISSE/persona.webp"
             alt="Public cibles - Proto-persona"
             class="w-full rounded-xl shadow-md"
           />
+          <div class="bg-black text-white rounded-2xl px-6 py-5">
+            <p class="text-lg font-semibold italic mb-2">{{ t("esquisse.rechercheQuote") }}</p>
+            <p class="text-sm text-white/60">— {{ t("esquisse.rechercheQuoteAuthor") }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -125,7 +129,7 @@
           <h2 class="text-2xl font-semibold mb-1">
             {{ t("esquisse.ideationTitle") }}
           </h2>
-          <div class="w-32 h-1 bg-black mb-8 section-line"></div>
+          <div class="w-32 h-1 bg-black mb-12 section-line"></div>
 
           <p class="mb-6">
             {{ t("esquisse.ideationP1") }}
@@ -133,13 +137,22 @@
           <p class="mb-6">
             {{ t("esquisse.ideationP2") }}
           </p>
-          <div
-            class="bg-black rounded-xl py-5 px-6 text-white text-lg font-semibold mb-10 inline-block"
-          >
-            <p class="mb-1">{{ t("esquisse.ideationConcept1") }}</p>
-            <p>{{ t("esquisse.ideationConcept2") }}</p>
-          </div>
 
+          <p class="text-lg font-semibold underline mb-4">{{ t("esquisse.ideationPistesTitle") }}</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-black shrink-0"></span>
+              <span v-html="t('esquisse.ideationPiste1')"></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-black shrink-0"></span>
+              <span v-html="t('esquisse.ideationPiste2')"></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-black shrink-0"></span>
+              <span v-html="t('esquisse.ideationPiste3')"></span>
+            </li>
+          </ul>
           <p class="mb-4">
             {{ t("esquisse.ideationP3") }}
           </p>
@@ -147,40 +160,33 @@
             {{ t("esquisse.ideationP4") }}
           </p>
         </div>
-        <div class="flex-1 flex items-start justify-center pt-16">
+        <div class="flex-1 flex flex-col gap-6 items-start justify-start pt-16">
           <img
             src="/ESQUISSE/conception.webp"
             alt="Mockup Esquisse"
             class="w-full max-w-md rounded-xl shadow-lg"
           />
+          <div class="bg-black text-white rounded-2xl px-6 py-5 w-full max-w-md">
+            <p class="text-lg font-semibold mb-1">{{ t("esquisse.ideationConcept1") }}</p>
+            <p class="text-lg font-semibold">{{ t("esquisse.ideationConcept2") }}</p>
+          </div>
         </div>
       </div>
 
       <div class="mt-20">
         <p class="text-lg font-semibold underline mb-8">{{ t("esquisse.wireframePapierTitle") }}</p>
-        <div
-          class="relative w-full max-w-xs mx-auto rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
-          @click="videoPlaying = !videoPlaying"
-        >
-          <video
-            ref="videoRef"
-            src="/proto_papermobile.mp4"
-            class="w-full rounded-2xl"
-            loop
-            muted
-            playsinline
-            preload="metadata"
-          ></video>
-          <div
-            v-if="!videoPlaying"
-            class="absolute inset-0 flex flex-col items-center justify-center bg-black/30 rounded-2xl transition-opacity duration-300"
-          >
-            <div class="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-md">
-              <svg class="w-7 h-7 ml-1 text-black" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-            <p class="text-white text-sm font-medium mt-4 tracking-wide">{{ t("esquisse.wireframePapierCta") }}</p>
+        <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
+          <div class="flex-1">
+            <p class="text-lg leading-relaxed" v-html="t('esquisse.wireframePapierP1')"></p>
+          </div>
+          <div class="flex-1 flex justify-center">
+            <video
+              src="/proto_papermobile.mp4"
+              class="w-full max-w-xs rounded-2xl shadow-lg"
+              controls
+              preload="metadata"
+              playsinline
+            ></video>
           </div>
         </div>
       </div>
@@ -338,6 +344,38 @@
       </div>
     </div>
     <div
+      id="perspectives"
+      ref="perspectives"
+      class="w-full max-w-7xl mx-auto bg-white px-6 md:px-16 mt-52 mb-32 text-black text-left animate-on-scroll"
+    >
+      <h2 class="text-3xl font-semibold mb-1">
+        {{ t("esquisse.perspectivesTitle") }}
+      </h2>
+      <div class="w-32 h-1 bg-black mb-10 section-line"></div>
+
+      <p class="text-lg mb-10" v-html="t('esquisse.perspectivesP')"></p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex items-start gap-5 border border-black rounded-2xl p-5">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center text-white font-semibold">1</span>
+          <p class="text-lg" v-html="t('esquisse.perspectives1')"></p>
+        </div>
+        <div class="flex items-start gap-5 border border-black rounded-2xl p-5">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center text-white font-semibold">2</span>
+          <p class="text-lg" v-html="t('esquisse.perspectives2')"></p>
+        </div>
+        <div class="flex items-start gap-5 border border-black rounded-2xl p-5">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center text-white font-semibold">3</span>
+          <p class="text-lg" v-html="t('esquisse.perspectives3')"></p>
+        </div>
+        <div class="flex items-start gap-5 border border-black rounded-2xl p-5">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center text-white font-semibold">4</span>
+          <p class="text-lg" v-html="t('esquisse.perspectives4')"></p>
+        </div>
+      </div>
+    </div>
+
+    <div
       class="fixed bottom-0 left-0 right-0 z-50 px-6 md:px-16 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-t border-gray-100"
     >
       <router-link
@@ -365,25 +403,12 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref, watch } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import Navbar from "../src/components/Navbar.vue";
 import ProjectTOC from "../src/components/ProjectTOC.vue";
 import { useI18n } from "../src/composables/useI18n";
 
 const { t, currentLang, toggleLang } = useI18n();
-
-const videoRef = ref(null);
-const videoPlaying = ref(false);
-
-watch(videoPlaying, (val) => {
-  if (!videoRef.value) return;
-  if (val) {
-    videoRef.value.play();
-  } else {
-    videoRef.value.pause();
-    videoRef.value.currentTime = 0;
-  }
-});
 
 const infoCard = ref(null);
 const section1 = ref(null);
@@ -393,6 +418,7 @@ const ideation = ref(null);
 const section3 = ref(null);
 const fonctionnalite = ref(null);
 const wireframes = ref(null);
+const perspectives = ref(null);
 
 let observer = null;
 
@@ -420,6 +446,7 @@ onMounted(() => {
     section3,
     fonctionnalite,
     wireframes,
+    perspectives,
   ];
   elements.forEach((el) => {
     if (el.value) {
