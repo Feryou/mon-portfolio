@@ -24,10 +24,8 @@
           <p
             class="text-base md:text-lg leading-relaxed animate-slideUp delay-200"
             style="opacity: 0; animation-fill-mode: forwards"
-          >
-            {{ t("landing.intro") }}<br />
-            {{ t("landing.intro2") }}
-          </p>
+            v-html="t('landing.intro') + '<br /><br />' + t('landing.intro2')"
+          ></p>
           <router-link
             to="/about"
             class="self-center lg:self-start mt-4 mb-20 md:mb-4 px-8 py-4 border border-black rounded-full text-base md:text-lg hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect animate-slideUp delay-400 inline-block"
@@ -37,7 +35,7 @@
         </div>
   
         <div
-          class="absolute bottom-10 sm:bottom-4 md:bottom-auto md:top-130 left-1/2 transform -translate-x-1/2 animate-fadeIn delay-600"
+          class="absolute bottom-10 sm:bottom-4 md:bottom-auto md:top-140 left-1/2 transform -translate-x-1/2 animate-fadeIn delay-600"
           style="opacity: 0; animation-fill-mode: forwards"
         >
           <svg

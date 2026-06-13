@@ -54,12 +54,25 @@
         {{ t("esquisse.comprendreTitle") }}
       </h2>
       <div class="w-32 h-0.5 bg-black mb-4 section-line"></div>
-      <p class="mb-10">
-        {{ t("esquisse.comprendreP1") }}
-      </p>
-      <p class="mb-10">
-        {{ t("esquisse.comprendreP2") }}
-      </p>
+
+      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center mt-6">
+        <div class="flex-1">
+          <p class="mb-10">
+            {{ t("esquisse.comprendreP1") }}
+          </p>
+          <p class="mb-10">
+            {{ t("esquisse.comprendreP2") }}
+          </p>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img
+            src="/proto.png"
+            alt="Prototype Esquisse"
+            class="w-full max-w-md rounded-2xl"
+            style="mix-blend-mode: multiply;"
+          />
+        </div>
+      </div>
     </div>
 
     <div

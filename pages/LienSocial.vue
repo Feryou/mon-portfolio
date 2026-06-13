@@ -108,7 +108,7 @@
           <img
             src="/mockup.webp"
             alt="Mockup Pronote - Interface de traduction"
-            class="w-full max-w-md rounded-2xl shadow-lg"
+            class="w-full max-w-md rounded-3xl shadow-lg"
           />
         </div>
       </div>

@@ -12,7 +12,7 @@ export const translations = {
     landing: {
       hello: "Hello, moi c'est Feryel !",
       intro:
-        "Product designer junior passionnée par les expériences accessibles et inclusives. Mon parcours croise le design et le développement web — ce qui me permet de concevoir des solutions réalistes, pensées pour être réellement fabriquées.",
+        "Product designer junior passionnée par les expériences accessibles et inclusives. Mon parcours croise le design et le développement web, ce qui me permet de concevoir des solutions réalistes, pensées pour être réellement fabriquées.",
       intro2:
         "En ce moment, je cherche un CDI pour mettre cette approche au service d'un produit à fort impact utilisateur.",
       enSavoirPlus: "En savoir plus",
