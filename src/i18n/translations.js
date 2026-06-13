@@ -88,13 +88,13 @@ export const translations = {
       perspectivesTitle: "Perspectives d'évolutions",
       perspectivesIntro:
         "Réaliser des tests d'utilisabilité pour les fonctionnalités supplémentaires du projet afin de prouver leur durabilité :",
-      perspectivesLi1: "Messagerie — tester son utilité réelle vs les canaux existants (WhatsApp, etc.)",
-      perspectivesLi2: "Profil utilisateur — valider l'appétence pour la dimension communautaire",
+      perspectivesLi1: "Messagerie : tester son utilité réelle vs les canaux existants",
+      perspectivesLi2: "Profil utilisateur : valider l'appétence pour la dimension communautaire",
       perspectivesLi3: "<strong>Interviews utilisateurs</strong> pour valider l'hypothèse centrale : les pratiquants d'activités outdoor ont-ils vraiment besoin de partager des infos météo en communauté ?",
       kpiTitle: "Indicateurs de performance",
-      kpi1: "Taux de retour hebdomadaire — l'app devient-elle un réflexe avant une sortie outdoor ?",
-      kpi2: "Nombre de contenus partagés dans la communauté — validation de l'engagement social",
-      kpi3: "Villes et lieux mis en favoris — proxy de l'ancrage dans les habitudes de l'utilisateur",
+      kpi1: "Taux de retour hebdomadaire : l'app devient-elle un réflexe avant une sortie outdoor ?",
+      kpi2: "Nombre de contenus partagés dans la communauté, validation de l'engagement social",
+      kpi3: "Villes et lieux mis en favoris : proxy de l'ancrage dans les habitudes de l'utilisateur",
       conclusion:
         "Ce projet m'a permis de renforcer ma méthodologie UX dans un contexte contraint, tout en développant une approche UI orientée clarté, accessibilité et engagement",
       precedent: "Précédent",
