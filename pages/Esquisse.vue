@@ -155,6 +155,35 @@
           />
         </div>
       </div>
+
+      <div class="mt-20">
+        <p class="text-lg font-semibold underline mb-8">{{ t("esquisse.wireframePapierTitle") }}</p>
+        <div
+          class="relative w-full max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
+          @click="videoPlaying = !videoPlaying"
+        >
+          <video
+            ref="videoRef"
+            src="/proto_papermobile.mp4"
+            class="w-full rounded-2xl"
+            loop
+            muted
+            playsinline
+            preload="metadata"
+          ></video>
+          <div
+            v-if="!videoPlaying"
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black/30 rounded-2xl transition-opacity duration-300"
+          >
+            <div class="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-md">
+              <svg class="w-7 h-7 ml-1 text-black" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <p class="text-white text-sm font-medium mt-4 tracking-wide">{{ t("esquisse.wireframePapierCta") }}</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div
@@ -336,12 +365,25 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue";
+import { onMounted, onUnmounted, ref, watch } from "vue";
 import Navbar from "../src/components/Navbar.vue";
 import ProjectTOC from "../src/components/ProjectTOC.vue";
 import { useI18n } from "../src/composables/useI18n";
 
 const { t, currentLang, toggleLang } = useI18n();
+
+const videoRef = ref(null);
+const videoPlaying = ref(false);
+
+watch(videoPlaying, (val) => {
+  if (!videoRef.value) return;
+  if (val) {
+    videoRef.value.play();
+  } else {
+    videoRef.value.pause();
+    videoRef.value.currentTime = 0;
+  }
+});
 
 const infoCard = ref(null);
 const section1 = ref(null);

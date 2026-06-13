@@ -12,9 +12,9 @@ export const translations = {
     landing: {
       hello: "Hello, moi c'est Feryel !",
       intro:
-        "Product designer junior passionnée par les expériences accessibles et inclusives. Mon parcours croise le design et le développement web, ce qui me permet de concevoir des solutions réalistes, pensées pour être réellement fabriquées.",
+        "Product designer junior passionnée par les expériences accessibles et inclusives. Mon parcours croise le design et le développement web — ce qui me permet de concevoir des solutions réalistes, pensées pour être réellement fabriquées.",
       intro2:
-        "En ce moment, je cherche un CDI pour mettre cette approche au service d'un produit à fort impact utilisateur.",
+        "En ce moment, je cherche un <strong>CDI</strong> pour mettre cette approche au service d'un produit à fort impact utilisateur.",
       enSavoirPlus: "En savoir plus",
       projetsUx: "Projets UX",
       decouvrir: "Découvrir l'application",
@@ -187,6 +187,8 @@ export const translations = {
       feat3Desc: "Communauté et événements physiques",
       wireframeBF: "Wireframe basse fidélité",
       maquetteHF: "Maquette haute fidélité",
+      wireframePapierTitle: "Wireframe papier",
+      wireframePapierCta: "Cliquer pour voir le wireframe papier",
       pageAccueil: "Page d'accueil",
       pageTutoriels: "Page tutoriels",
       pageMonCompte: "Page Mon Compte",
@@ -297,7 +299,7 @@ export const translations = {
       budget3:
         "Deviser les solutions de traduction et vocalisation (IA, partenariats, abonnements ?)",
       presentationTitle: "Restitution devant Pronote & Docaposte",
-      presentationP: "À l'issue du projet, nous avons présenté notre démarche et notre solution devant les <strong>équipes produit de Pronote et Docaposte</strong> commanditaires du projet. Une occasion de défendre nos choix de design, d'expliquer notre raisonnement UX et de recevoir des retours terrain de professionnels du secteur.",
+      presentationP: "À l'issue du projet, nous avons présenté notre démarche et notre solution devant les <strong>équipes produit de Pronote et Docaposte</strong> — commanditaires du projet. Une occasion de défendre nos choix de design, d'expliquer notre raisonnement UX et de recevoir des retours terrain de professionnels du secteur.",
       precedent: "Précédent",
       suivant: "Suivant",
     },
@@ -334,7 +336,7 @@ export const translations = {
       intro:
         "Junior product designer passionate about accessible and inclusive experiences. My background bridges design and web development — allowing me to create realistic solutions, built to actually be made.",
       intro2:
-        "Right now, I'm looking for a full-time position to bring this approach to a product with real user impact.",
+        "Right now, I'm looking for a <strong>full-time position</strong> to bring this approach to a product with real user impact.",
       enSavoirPlus: "Learn more",
       projetsUx: "UX Projects",
       decouvrir: "Discover the app",
@@ -500,6 +502,8 @@ export const translations = {
       feat3Desc: "Community and physical events",
       wireframeBF: "Low-fidelity wireframe",
       maquetteHF: "High-fidelity mockup",
+      wireframePapierTitle: "Paper wireframe",
+      wireframePapierCta: "Click to watch the paper wireframe",
       pageAccueil: "Home page",
       pageTutoriels: "Tutorials page",
       pageMonCompte: "My Account page",
