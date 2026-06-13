@@ -11,7 +11,7 @@
           alt="Ampoule"
           loading="eager"
           fetchpriority="high"
-          class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-8.5 md:-mt-21 animate-slideInLeft"
+          class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-20 md:-mt-40 animate-slideInLeft"
         />
         <div
           class="text-center lg:text-left space-y-6 lg:ml-12 flex flex-col justify-center w-full max-w-xl"
@@ -35,7 +35,7 @@
         </div>
   
         <div
-          class="absolute bottom-10 sm:bottom-4 md:bottom-auto md:top-140 left-1/2 transform -translate-x-1/2 animate-fadeIn delay-600"
+          class="absolute bottom-10 sm:bottom-4 md:bottom-auto md:top-144 left-1/2 transform -translate-x-1/2 animate-fadeIn delay-600"
           style="opacity: 0; animation-fill-mode: forwards"
         >
           <svg

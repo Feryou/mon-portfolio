@@ -159,7 +159,7 @@
       <div class="mt-20">
         <p class="text-lg font-semibold underline mb-8">{{ t("esquisse.wireframePapierTitle") }}</p>
         <div
-          class="relative w-full max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
+          class="relative w-full max-w-xs mx-auto rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
           @click="videoPlaying = !videoPlaying"
         >
           <video
