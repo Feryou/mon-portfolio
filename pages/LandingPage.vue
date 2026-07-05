@@ -4,15 +4,15 @@
       <Navbar />
   
       <section
-        class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-8 md:pt-20 gap-8 md:gap-22 relative pb-12"
+        class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-0 md:pt-20 gap-8 md:gap-22 relative pb-12"
       >
-        <img
-          src="/Ampoule_home_page.webp"
-          alt="Ampoule"
-          loading="eager"
-          fetchpriority="high"
-          class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-20 md:-mt-40 animate-slideInLeft"
-        />
+      <img
+  src="/Ampoule_home_page.webp"
+  alt="Ampoule"
+  loading="eager"
+  fetchpriority="high"
+  class="w-full max-w-xs md:max-w-md h-auto mb-8 lg:mb-0 animate-blink -mt-0 md:-mt-40 animate-slideInLeft"
+/>
         <div
           class="text-center lg:text-left space-y-6 lg:ml-12 flex flex-col justify-center w-full max-w-xl"
         >
