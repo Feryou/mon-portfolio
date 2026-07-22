@@ -7,7 +7,12 @@
       <img
         src="/MELO/mockup_hero.webp"
         alt="Melio - Reprenez le contrôle de votre suivi médical"
-        class="absolute inset-0 w-full h-full object-cover object-[center_25%] animate-scaleIn"
+        class="hidden md:block absolute inset-0 w-full h-full object-cover object-[center_25%] animate-scaleIn"
+      />
+      <img
+        src="/MELO/mockup_hero_mobile.webp"
+        alt="Melio - Reprenez le contrôle de votre suivi médical"
+        class="block md:hidden absolute inset-0 w-full h-full object-cover object-[center_25%] animate-scaleIn"
       />
     </div>
 
@@ -380,48 +385,48 @@
           <p class="font-semibold mb-2">{{ t("melo.testsIdentifieTitle") }}</p>
           <p>{{ t("melo.testsIdentifieP") }}</p>
         </div>
-        <div class="flex-1 bg-[#FBE4E1] rounded-3xl p-6">
-          <div class="grid grid-cols-2 gap-3">
-            <div class="bg-[#E8674F] text-white rounded-xl px-4 py-3 text-center">
-              <p class="font-semibold text-sm">{{ t("melo.testsTag1Title") }}</p>
-              <p class="text-xs opacity-80">{{ t("melo.testsTag1Sub") }}</p>
+        <div class="flex-1 bg-[#FBE4E1] rounded-2xl sm:rounded-3xl p-3 sm:p-6">
+          <div class="grid grid-cols-2 gap-2 sm:gap-3">
+            <div class="bg-[#E8674F] text-white rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3 text-center">
+              <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTag1Title") }}</p>
+              <p class="text-[10px] sm:text-xs opacity-80 leading-tight">{{ t("melo.testsTag1Sub") }}</p>
             </div>
-            <div class="bg-[#E8674F] text-white rounded-xl px-4 py-3 text-center">
-              <p class="font-semibold text-sm">{{ t("melo.testsTag2Title") }}</p>
-              <p class="text-xs opacity-80">{{ t("melo.testsTag2Sub") }}</p>
+            <div class="bg-[#E8674F] text-white rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3 text-center">
+              <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTag2Title") }}</p>
+              <p class="text-[10px] sm:text-xs opacity-80 leading-tight">{{ t("melo.testsTag2Sub") }}</p>
             </div>
-            <div class="bg-[#D9D3F0] rounded-xl px-4 py-3 text-center flex items-center justify-center">
-              <p class="font-semibold text-sm">{{ t("melo.testsValideTitle") }}</p>
+            <div class="bg-[#D9D3F0] rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3 text-center flex items-center justify-center">
+              <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsValideTitle") }}</p>
             </div>
-            <div class="bg-[#E8674F] text-white rounded-xl px-4 py-3 text-center flex items-center justify-center">
-              <p class="font-semibold text-sm">{{ t("melo.testsTagFrictions") }}</p>
+            <div class="bg-[#E8674F] text-white rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3 text-center flex items-center justify-center">
+              <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagFrictions") }}</p>
             </div>
-            <div class="grid grid-cols-2 gap-3">
-              <div class="bg-[#D9D3F0] rounded-xl px-3 py-3 text-center flex items-center justify-center">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagAccessible") }}</p>
+            <div class="grid grid-cols-2 gap-2 sm:gap-3">
+              <div class="bg-[#D9D3F0] rounded-lg sm:rounded-xl px-1.5 sm:px-3 py-2 sm:py-3 text-center flex items-center justify-center">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagAccessible") }}</p>
               </div>
-              <div class="bg-[#D9D3F0] rounded-xl px-3 py-3 text-center flex items-center justify-center">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagIntuitif") }}</p>
+              <div class="bg-[#D9D3F0] rounded-lg sm:rounded-xl px-1.5 sm:px-3 py-2 sm:py-3 text-center flex items-center justify-center">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagIntuitif") }}</p>
               </div>
-              <div class="bg-[#D9D3F0] rounded-xl px-3 py-3 text-center flex items-center justify-center">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagConfiance") }}</p>
+              <div class="bg-[#D9D3F0] rounded-lg sm:rounded-xl px-1.5 sm:px-3 py-2 sm:py-3 text-center flex items-center justify-center">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagConfiance") }}</p>
               </div>
-              <div class="bg-[#D9D3F0] rounded-xl px-3 py-3 text-center flex items-center justify-center">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagFun") }}</p>
+              <div class="bg-[#D9D3F0] rounded-lg sm:rounded-xl px-1.5 sm:px-3 py-2 sm:py-3 text-center flex items-center justify-center">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagFun") }}</p>
               </div>
             </div>
-            <div class="flex flex-col gap-3">
-              <div class="bg-[#E8674F] text-white rounded-xl px-4 py-3">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagCouleurTitle") }}</p>
-                <p class="text-xs opacity-80">{{ t("melo.testsTagCouleurSub") }}</p>
+            <div class="flex flex-col gap-2 sm:gap-3">
+              <div class="bg-[#E8674F] text-white rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagCouleurTitle") }}</p>
+                <p class="text-[10px] sm:text-xs opacity-80 leading-tight">{{ t("melo.testsTagCouleurSub") }}</p>
               </div>
-              <div class="bg-[#E8674F] text-white rounded-xl px-4 py-3">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagEchelleTitle") }}</p>
-                <p class="text-xs opacity-80">{{ t("melo.testsTagEchelleSub") }}</p>
+              <div class="bg-[#E8674F] text-white rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagEchelleTitle") }}</p>
+                <p class="text-[10px] sm:text-xs opacity-80 leading-tight">{{ t("melo.testsTagEchelleSub") }}</p>
               </div>
-              <div class="bg-[#E8674F] text-white rounded-xl px-4 py-3">
-                <p class="font-semibold text-sm">{{ t("melo.testsTagPathologieTitle") }}</p>
-                <p class="text-xs opacity-80">{{ t("melo.testsTagPathologieSub") }}</p>
+              <div class="bg-[#E8674F] text-white rounded-lg sm:rounded-xl px-2 sm:px-4 py-2 sm:py-3">
+                <p class="font-semibold text-xs sm:text-sm leading-tight">{{ t("melo.testsTagPathologieTitle") }}</p>
+                <p class="text-[10px] sm:text-xs opacity-80 leading-tight">{{ t("melo.testsTagPathologieSub") }}</p>
               </div>
             </div>
           </div>
@@ -454,14 +459,8 @@
             class="w-full rounded-2xl shadow-lg"
           />
           <div class="grid grid-cols-2 gap-4 mt-6">
-            <div class="text-center">
-              <p class="font-semibold">{{ t("melo.medecinsLabel") }}</p>
-              <p class="text-sm text-gray-500">{{ t("melo.medecinsSub") }}</p>
-            </div>
-            <div class="text-center">
-              <p class="font-semibold">{{ t("melo.mutuellesLabel") }}</p>
-              <p class="text-sm text-gray-500">{{ t("melo.mutuellesSub") }}</p>
-            </div>
+           
+            
           </div>
         </div>
       </div>
