@@ -602,7 +602,7 @@
         >
       </button>
       <router-link
-        to="/esquisse"
+        to="/melo"
         class="inline-flex items-center gap-1 md:gap-2 px-3 py-1.5 md:px-6 md:py-2.5 bg-[#A1DFCC] text-black rounded-full text-xs md:text-lg font-medium hover:opacity-90 transition"
       >
         {{ t("lienSocial.suivant") }} <span>&rarr;</span>

@@ -105,7 +105,7 @@
                     loading="lazy"
                     width="448"
                     height="270"
-                    class="w-full h-full object-cover rounded-[30px] z-0"
+                    :class="['w-full h-full object-cover rounded-[30px] z-0', project.imgClass]"
                   />
                   <div
                     class="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out bg-white/80 backdrop-blur-md rounded-[30px] flex flex-col items-center justify-center text-center z-10 px-4"
@@ -146,9 +146,9 @@
   
   const projects = [
     { title: "Module de traduction sur Pronote", image: "/Pronote.webp", route: "lien-social", cta: "Voir le case study" },
+    { title: "Copilote santé pour les patients", image: "/MELO/mockup_hero_landing.webp", route: "melo", cta: "Voir le case study", imgClass: "scale-150 object-[center_35%]" },
     { title: "Application mobile pour les artistes", image: "ESQUISSE/webp/Esquisse.webp", route: "Esquisse", cta: "Voir le case study" },
     { title: "Application mobile météo", image: "/Windmap.webp", route: "Windmap", cta: "Voir le case study" },
-    { title: "Copilote santé pour les patients", image: "/journal_de_bord.webp", route: "" },
   ];
   
   const projectRefs = ref([]);

@@ -8,6 +8,7 @@ import Cabane from "../pages/Cabane.vue";
 import Esquisse from "../pages/Esquisse.vue";
 import AutresProjets from "../pages/AutresProjets.vue";
 import LienSocial from "../pages/LienSocial.vue";
+import Melo from "../pages/Melo.vue";
 
 const routes = [
   { path: "/", component: LandingPage },
@@ -18,6 +19,7 @@ const routes = [
   { path: "/esquisse", component: Esquisse },
   { path: "/autres-projets", component: AutresProjets },
   { path: "/lien-social", component: LienSocial },
+  { path: "/melo", component: Melo },
 ];
 
 const router = createRouter({
