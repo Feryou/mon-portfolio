@@ -341,6 +341,31 @@ export const translations = {
       madatlasCaption: "Projet réalisé dans le cadre d'un concours académique",
       blackFridayDesc: "Le brief créatif initial consistait à concevoir une campagne promotionnelle digitale autour de la thématique du Black Friday. À travers les visuels et la charte graphique de l'entreprise, ma mission était de mettre en avant une campagne actuelle, en adéquation avec l'identité de la marque.",
       pinkOctoberDesc: "Le brief créatif portait sur la création d'une campagne digitale pour Octobre Rose. L'enjeu était important, car il s'agissait de concevoir une campagne complète intégrant des visuels animés (vidéos, GIF) afin de renforcer l'interactivité. Ces visuels ont servi à promouvoir la campagne sur les réseaux sociaux de l'entreprise.",
+    // génériques
+projetAnnexe: "Projet annexe — identité graphique",
+livrables: "Livrables",
+contexte: "Contexte",
+projetPrecedent: "Projet précédent",
+projetSuivant: "Projet suivant",
+
+// badges (à valider avec toi)
+badgeMadatlas: "Concours académique",
+badgeNuxe: "Projet client",
+
+// Madatlas
+madatlasLivrables: "Logo, charte, mockup couverture",
+madatlasContexte: "Revue géographique, Madagascar",
+
+// Black Friday
+blackFridayLivrables: "Bannière web, posts réseaux sociaux",
+blackFridayContexte: "Campagne e-commerce, Nuxe",
+blackFridayCaption: "Bannière web — Black Friday",
+
+// Pink October
+pinkOctoberLivrables: "Posts Instagram, contenu de sensibilisation",
+pinkOctoberContexte: "Campagne de sensibilisation, Nuxe",
+pinkOctoberCaption: "Post Instagram — Pink October",
+    
     },
     melo: {
       sujet: "Copilote pour les parcours long de santé",
@@ -797,6 +822,30 @@ export const translations = {
       madatlasCaption: "Project carried out as part of an academic competition",
       blackFridayDesc: "The initial creative brief was to design a digital promotional campaign around the Black Friday theme. Through the company's visuals and graphic charter, my mission was to highlight a current campaign, in line with the brand's identity.",
       pinkOctoberDesc: "The creative brief focused on creating a digital campaign for Pink October. The challenge was significant, as it involved designing a complete campaign integrating animated visuals (videos, GIFs) to enhance interactivity. These visuals were used to promote the campaign on the company's social media.",
+      // generic
+projetAnnexe: "Side project — visual identity",
+livrables: "Deliverables",
+contexte: "Context",
+projetPrecedent: "Previous project",
+projetSuivant: "Next project",
+
+// badges (to confirm with you)
+badgeMadatlas: "Academic competition",
+badgeNuxe: "Client project",
+
+// Madatlas
+madatlasLivrables: "Logo, brand guidelines, cover mockup",
+madatlasContexte: "Geographic journal, Madagascar",
+
+// Black Friday
+blackFridayLivrables: "Web banner, social media posts",
+blackFridayContexte: "E-commerce campaign, Nuxe",
+blackFridayCaption: "Web banner — Black Friday",
+
+// Pink October
+pinkOctoberLivrables: "Instagram posts, awareness content",
+pinkOctoberContexte: "Awareness campaign, Nuxe",
+pinkOctoberCaption: "Instagram post — Pink October",
     },
     melo: {
       sujet: "A copilot for long-term health journeys",

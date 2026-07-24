@@ -129,167 +129,317 @@
           </div>
         </div>
 
+        <!-- ==================== MADATLAS ==================== -->
         <div v-else-if="selectedProject === 'madatlas'" key="madatlas">
-          <button
-            @click="selectedProject = null"
-            class="mb-8 flex items-center gap-2 text-sm text-black hover:opacity-60 transition duration-200"
-          >
-            ← {{ t("autresProjets.retour") }}
-          </button>
-
-          <div
-            class="detail-card max-w-7xl mx-auto bg-white border border-black rounded-3xl shadow-md mb-16 overflow-hidden"
-          >
-            <div class="detail-header bg-[#95B79E] px-10 py-12">
-              <h3 class="text-4xl font-light text-black mb-6">
-                {{ t("madatlas.title") }}
-              </h3>
-              <p class="font-light text-black max-w-3xl">
-                {{ t("autresProjets.madatlasDesc") }}
-              </p>
+          <div class="max-w-5xl mx-auto">
+            <button
+              @click="selectedProject = null"
+              class="mb-8 flex items-center gap-2 text-sm font-medium text-black bg-[#9be4c4] border border-black rounded-full px-5 py-2.5 hover:bg-black hover:text-white transition duration-300"
+            >
+              ← {{ t("autresProjets.retour") }}
+            </button>
+          </div>
+          <div class="detail-card max-w-5xl mx-auto mb-16">
+            <div class="flex items-start justify-between mb-6">
+              <span class="text-sm text-gray-600">
+                {{ t("autresProjets.projetAnnexe") }}
+              </span>
+              <span
+                class="px-4 py-2 border border-gray-300 rounded-full text-sm text-gray-600"
+              >
+                {{ t("autresProjets.badgeMadatlas") }}
+              </span>
             </div>
 
-            <div
-              class="detail-body px-10 py-12 grid grid-cols-1 md:grid-cols-2 gap-10"
-            >
-              <div>
-                <h6 class="text-xl font-light text-black underline mb-4">
-                  {{ t("autresProjets.missions") }} :
-                </h6>
-                <ul class="font-light text-black mb-10 space-y-1">
-                  <li>-{{ t("autresProjets.identiteVisuelle") }}</li>
-                  <li>-{{ t("autresProjets.supportsImprimes") }}</li>
-                </ul>
+            <h3 class="text-4xl md:text-5xl font-bold text-black mb-6">
+              {{ t("madatlas.title") }}
+            </h3>
+            <p class="font-light text-black max-w-3xl mb-10">
+              {{ t("autresProjets.madatlasDesc") }}
+            </p>
 
-                <div class="flex gap-4">
-                  <img
-                    src="/MADATLAS DETAIL/une_2.webp"
-                    alt="Madatlas couverture 1"
-                    class="w-1/2 rounded-xl object-cover"
-                  />
-                  <img
-                    src="/MADATLAS DETAIL/une2.webp"
-                    alt="Madatlas couverture 2"
-                    class="w-1/2 rounded-xl object-cover"
-                  />
-                </div>
+            <div class="border-t border-gray-300 mb-10"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.missions") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.identiteVisuelle") }},
+                  {{ t("autresProjets.supportsImprimes") }}
+                </p>
+              </div>
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.livrables") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.madatlasLivrables") }}
+                </p>
+              </div>
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.contexte") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.madatlasContexte") }}
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="border border-gray-300 rounded-3xl p-4 flex gap-4">
+                <img
+                  src="/MADATLAS DETAIL/une_2.webp"
+                  alt="Madatlas couverture 1"
+                  class="w-1/2 rounded-2xl object-cover"
+                />
+                <img
+                  src="/MADATLAS DETAIL/une2.webp"
+                  alt="Madatlas couverture 2"
+                  class="w-1/2 rounded-2xl object-cover"
+                />
               </div>
 
-              <div class="flex flex-col items-center justify-start">
+              <div class="border border-gray-300 rounded-3xl p-4">
                 <img
                   src="/MADATLAS DETAIL/mockup.webp"
                   alt="Madatlas mockup"
-                  class="w-full rounded-xl object-cover mb-4"
+                  class="w-full rounded-2xl object-cover mb-4"
                 />
-                <p class="text-center font-light text-black text-sm">
+                <p class="text-center text-gray-600 text-sm">
                   {{ t("autresProjets.madatlasCaption") }}
                 </p>
               </div>
             </div>
           </div>
+
+          <div class="max-w-5xl mx-auto flex justify-between items-center mb-20">
+            <button
+              @click="prevProject"
+              class="px-6 py-3 border border-gray-300 rounded-full text-sm hover:bg-black hover:text-white transition duration-300"
+            >
+              ← {{ t("autresProjets.projetPrecedent") }}
+            </button>
+            <button
+              @click="nextProject"
+              class="px-6 py-3 border border-gray-300 rounded-full text-sm hover:bg-black hover:text-white transition duration-300"
+            >
+              {{ t("autresProjets.projetSuivant") }} →
+            </button>
+          </div>
         </div>
 
+        <!-- ==================== BLACK FRIDAY ==================== -->
         <div v-else-if="selectedProject === 'blackfriday'" key="blackfriday">
-          <button
-            @click="selectedProject = null"
-            class="mb-8 flex items-center gap-2 text-sm text-black hover:opacity-60 transition duration-200"
-          >
-            ← {{ t("autresProjets.retour") }}
-          </button>
-
-          <div
-            class="detail-card max-w-7xl mx-auto bg-white border border-black rounded-3xl shadow-md mb-16 overflow-hidden"
-          >
-            <div class="detail-header bg-[#95B79E] px-10 py-12">
-              <h3 class="text-4xl font-light text-black mb-6">NUXE</h3>
-              <p class="font-light text-black max-w-3xl">
-                {{ t("autresProjets.blackFridayDesc") }}
-              </p>
+          <div class="max-w-5xl mx-auto">
+            <button
+              @click="selectedProject = null"
+              class="mb-8 flex items-center gap-2 text-sm font-medium text-black bg-[#9be4c4] border border-black rounded-full px-5 py-2.5 hover:bg-black hover:text-white transition duration-300"
+            >
+              ← {{ t("autresProjets.retour") }}
+            </button>
+          </div>
+          <div class="detail-card max-w-5xl mx-auto mb-16">
+            <div class="flex items-start justify-between mb-6">
+              <span class="text-sm text-gray-600">
+                {{ t("autresProjets.projetAnnexe") }}
+              </span>
+              <span
+                class="px-4 py-2 border border-gray-300 rounded-full text-sm text-gray-600"
+              >
+                {{ t("autresProjets.badgeNuxe") }}
+              </span>
             </div>
 
-            <div
-              class="detail-body px-10 py-12 grid grid-cols-1 md:grid-cols-2 gap-10"
-            >
-              <div>
-                <h6 class="text-xl font-light text-black underline mb-4">
-                  {{ t("autresProjets.missions") }} :
-                </h6>
-                <ul class="font-light text-black mb-10 space-y-1">
-                  <li>-{{ t("autresProjets.identiteVisuelle") }}</li>
-                  <li>-{{ t("autresProjets.supportsDigitaux") }}</li>
-                </ul>
+            <h3 class="text-4xl md:text-5xl font-bold text-black mb-6">NUXE</h3>
+            <p class="font-light text-black max-w-3xl mb-10">
+              {{ t("autresProjets.blackFridayDesc") }}
+            </p>
 
-                <img
-                  src="/NUXE/NUXE BF DETAIL/BAN_DAT-NUXE-EN-BLACK_FRIDAY_1220x600.webp"
-                  alt="Nuxe Black Friday bannière"
-                  class="w-full rounded-xl object-cover"
-                />
+            <div class="border-t border-gray-300 mb-10"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.missions") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.identiteVisuelle") }},
+                  {{ t("autresProjets.supportsDigitaux") }}
+                </p>
+              </div>
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.livrables") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.blackFridayLivrables") }}
+                </p>
+              </div>
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.contexte") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.blackFridayContexte") }}
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="border border-gray-300 rounded-3xl p-4 flex gap-4">
+                <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/NUXE/NUXE BF DETAIL/POST-NUXE-EU-BLACK FRIDAY-2024_1080x1920.webp"
+                    alt="Nuxe Black Friday post 1"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/NUXE/NUXE BF DETAIL/POST-NUXE-BLACK FRIDAY-2024_WITHOUT_TEXT_1080x1920.webp"
+                    alt="Nuxe Black Friday post 2"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
               </div>
 
-              <div class="flex gap-4 items-start">
-                <img
-                  src="/NUXE/NUXE BF DETAIL/POST-NUXE-EU-BLACK FRIDAY-2024_1080x1920.webp"
-                  alt="Nuxe Black Friday post 1"
-                  class="w-1/2 rounded-xl object-cover"
-                />
-                <img
-                  src="/NUXE/NUXE BF DETAIL/POST-NUXE-BLACK FRIDAY-2024_WITHOUT_TEXT_1080x1920.webp"
-                  alt="Nuxe Black Friday post 2"
-                  class="w-1/2 rounded-xl object-cover"
-                />
+              <div class="border border-gray-300 rounded-3xl p-4">
+                <div class="w-full h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden mb-4">
+                  <img
+                    src="/NUXE/NUXE BF DETAIL/BAN_DAT-NUXE-EN-BLACK_FRIDAY_1220x600.webp"
+                    alt="Nuxe Black Friday bannière"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <p class="text-center text-gray-600 text-sm">
+                  {{ t("autresProjets.blackFridayCaption") }}
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div v-else-if="selectedProject === 'pinkoctober'" key="pinkoctober">
-          <button
-            @click="selectedProject = null"
-            class="mb-8 flex items-center gap-2 text-sm text-black hover:opacity-60 transition duration-200"
-          >
-            ← {{ t("autresProjets.retour") }}
-          </button>
 
-          <div
-            class="detail-card max-w-7xl mx-auto bg-white border border-black rounded-3xl shadow-md mb-16 overflow-hidden"
-          >
-            <div class="detail-header bg-[#f0d6e8] px-10 py-12">
-              <h3 class="text-4xl font-light text-black mb-6">NUXE</h3>
-              <p class="font-light text-black max-w-3xl">
-                {{ t("autresProjets.pinkOctoberDesc") }}
-              </p>
-            </div>
-
-            <div
-              class="detail-body px-10 py-12 grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-10 items-start"
+          <div class="max-w-5xl mx-auto flex justify-between items-center mb-20">
+            <button
+              @click="prevProject"
+              class="px-6 py-3 border border-gray-300 rounded-full text-sm hover:bg-black hover:text-white transition duration-300"
             >
-              <div>
-                <h6 class="text-xl font-light text-black underline mb-4">
-                  {{ t("autresProjets.missions") }} :
-                </h6>
-                <ul class="font-light text-black space-y-4">
-                  <li>-{{ t("autresProjets.identiteVisuelle") }}</li>
-                  <li>-{{ t("autresProjets.supportsDigitaux") }}</li>
-                </ul>
-              </div>
+              ← {{ t("autresProjets.projetPrecedent") }}
+            </button>
+            <button
+              @click="nextProject"
+              class="px-6 py-3 border border-gray-300 rounded-full text-sm hover:bg-black hover:text-white transition duration-300"
+            >
+              {{ t("autresProjets.projetSuivant") }} →
+            </button>
+          </div>
+        </div>
 
-              <div class="flex flex-col md:flex-row gap-4 md:items-start">
-                <img
-                  src="/NUXE/NUXE PO DETAIL/IMG_3526.webp"
-                  alt="Nuxe Pink October Instagram"
-                  class="w-full md:w-1/3 rounded-xl object-cover"
-                />
-                <img
-                  src="/NUXE/NUXE PO DETAIL/POST-NUXE-EN-PINK_OCTOBER_ALL_CONCERNED-1080x1920.webp"
-                  alt="Nuxe Pink October All Concerned"
-                  class="w-full md:w-1/3 rounded-xl object-cover"
-                />
-                <img
-                  src="/NUXE/NUXE PO DETAIL/POST-NUXE-EN-PINK_OCTOBER-ALARMING_SIGNALS-1080x1920.webp"
-                  alt="Nuxe Pink October Know the Signs"
-                  class="w-full md:w-1/3 rounded-xl object-cover"
-                />
+        <!-- ==================== PINK OCTOBER ==================== -->
+        <div v-else-if="selectedProject === 'pinkoctober'" key="pinkoctober">
+          <div class="max-w-5xl mx-auto">
+            <button
+              @click="selectedProject = null"
+              class="mb-8 flex items-center gap-2 text-sm font-medium text-black bg-[#9be4c4] border border-black rounded-full px-5 py-2.5 hover:bg-black hover:text-white transition duration-300"
+            >
+              ← {{ t("autresProjets.retour") }}
+            </button>
+          </div>
+          <div class="detail-card max-w-5xl mx-auto mb-16">
+            <div class="flex items-start justify-between mb-6">
+              <span class="text-sm text-gray-600">
+                {{ t("autresProjets.projetAnnexe") }}
+              </span>
+              <span
+                class="px-4 py-2 border border-gray-300 rounded-full text-sm text-gray-600"
+              >
+                {{ t("autresProjets.badgeNuxe") }}
+              </span>
+            </div>
+
+            <h3 class="text-4xl md:text-5xl font-bold text-black mb-6">NUXE</h3>
+            <p class="font-light text-black max-w-3xl mb-10">
+              {{ t("autresProjets.pinkOctoberDesc") }}
+            </p>
+
+            <div class="border-t border-gray-300 mb-10"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.missions") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.identiteVisuelle") }},
+                  {{ t("autresProjets.supportsDigitaux") }}
+                </p>
+              </div>
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.livrables") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.pinkOctoberLivrables") }}
+                </p>
+              </div>
+              <div class="bg-[#EDEBE3] rounded-2xl p-6">
+                <p class="text-sm text-gray-600 mb-2">
+                  {{ t("autresProjets.contexte") }}
+                </p>
+                <p class="text-black">
+                  {{ t("autresProjets.pinkOctoberContexte") }}
+                </p>
               </div>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="border border-gray-300 rounded-3xl p-4 flex gap-4">
+                <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/NUXE/NUXE PO DETAIL/IMG_3526.webp"
+                    alt="Nuxe Pink October Instagram"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/NUXE/NUXE PO DETAIL/POST-NUXE-EN-PINK_OCTOBER_ALL_CONCERNED-1080x1920.webp"
+                    alt="Nuxe Pink October All Concerned"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+
+              <div class="border border-gray-300 rounded-3xl p-4">
+                <div class="w-full h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden mb-4">
+                  <img
+                    src="/NUXE/NUXE PO DETAIL/POST-NUXE-EN-PINK_OCTOBER-ALARMING_SIGNALS-1080x1920.webp"
+                    alt="Nuxe Pink October Know the Signs"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <p class="text-center text-gray-600 text-sm">
+                  {{ t("autresProjets.pinkOctoberCaption") }}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-5xl mx-auto flex justify-between items-center mb-20">
+            <button
+              @click="prevProject"
+              class="px-6 py-3 border border-gray-300 rounded-full text-sm hover:bg-black hover:text-white transition duration-300"
+            >
+              ← {{ t("autresProjets.projetPrecedent") }}
+            </button>
+            <button
+              @click="nextProject"
+              class="px-6 py-3 border border-gray-300 rounded-full text-sm hover:bg-black hover:text-white transition duration-300"
+            >
+              {{ t("autresProjets.projetSuivant") }} →
+            </button>
           </div>
         </div>
       </Transition>
@@ -304,6 +454,19 @@ import { useI18n } from "../src/composables/useI18n";
 
 const { t } = useI18n();
 const selectedProject = ref(null);
+
+const projectOrder = ["madatlas", "blackfriday", "pinkoctober"];
+
+function nextProject() {
+  const idx = projectOrder.indexOf(selectedProject.value);
+  selectedProject.value = projectOrder[(idx + 1) % projectOrder.length];
+}
+
+function prevProject() {
+  const idx = projectOrder.indexOf(selectedProject.value);
+  selectedProject.value =
+    projectOrder[(idx - 1 + projectOrder.length) % projectOrder.length];
+}
 </script>
 
 <style scoped>
@@ -340,18 +503,8 @@ const selectedProject = ref(null);
 }
 
 .detail-card {
-  animation: cardIn 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fadeSlideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 0.1s;
-}
-
-.detail-header {
-  animation: fadeSlideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.25s;
-}
-
-.detail-body {
-  animation: fadeSlideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.38s;
 }
 
 @keyframes fadeSlideUp {
