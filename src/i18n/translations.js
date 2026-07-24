@@ -232,9 +232,9 @@ export const translations = {
       tocPresentation: "Présentation finale",
       comprendreTitle: "Comprendre le projet",
       comprendreP1:
-        "Les enseignants du secondaire passent un temps considérable à tenter de joindre des <strong>familles allophones ou éloignées du numérique</strong> \u2014 avec des outils pensés pour des parents déjà connectés et francophones. Résultat\u00A0: une <strong>communication qui échoue avant même d'avoir commencé</strong>.",
+        "Les enseignants du secondaire passent un temps considérable à tenter de joindre des <strong>familles allophones ou éloignées du numérique</strong> avec des outils pensés pour des parents déjà connectés et francophones. Résultat\u00A0: une <strong>communication qui échoue avant même d'avoir commencé</strong>.",
       comprendreP2:
-        "<strong>Ma mission\u00A0:</strong> comprendre pourquoi ce lien se rompt, identifier les vrais <strong>points de friction</strong> côté enseignants et familles, puis concevoir une solution intégrée directement dans les outils existants \u2014 sans alourdir la <strong>charge mentale</strong> des équipes pédagogiques. Une <strong>fonctionnalité de traduction</strong> a ainsi été conçue au sein même de <strong>Pronote</strong>.",
+        "<strong>Ma mission\u00A0:</strong> comprendre pourquoi ce lien se rompt, identifier les vrais <strong>points de friction</strong> côté enseignants et familles, puis concevoir une solution intégrée directement dans les outils existants sans alourdir la <strong>charge mentale</strong> des équipes pédagogiques. Une <strong>fonctionnalité de traduction</strong> a ainsi été conçue au sein même de <strong>Pronote</strong>.",
       rechercheTitle: "UX Research",
       rechSecondaire: "Recherche\nsecondaire",
       rechSecondaireP1:
