@@ -240,7 +240,7 @@
       ref="section3"
       class="w-full max-w-7xl mx-auto bg-white px-6 md:px-16 mt-52 mb-32 text-black text-lg text-left animate-on-scroll"
     >
-      <div class="flex flex-col md:flex-row gap-8 md:gap-12 mt-12 items-start">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-12 mt-12 items-center">
         <div class="flex-1">
           <h2 class="text-2xl font-semibold mb-1">
             {{ t("windmap.perspectivesTitle") }}

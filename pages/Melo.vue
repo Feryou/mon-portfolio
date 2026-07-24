@@ -51,6 +51,7 @@
         { label: t('melo.tocTests'), id: 'tests' },
         { label: t('melo.tocBusiness'), id: 'business' },
         { label: t('melo.tocVision'), id: 'vision' },
+        { label: t('melo.tocPresentation'), id: 'presentation' },
       ]"
     />
 
@@ -188,11 +189,11 @@
           <p class="mb-6">{{ t("melo.ideationP1") }}</p>
           <p v-html="t('melo.ideationP2')"></p>
         </div>
-        <div class="flex-1 flex justify-center">
+        <div class="flex-1 flex justify-center items-center w-full">
           <img
             src="/MELO/app.webp"
             alt="Écrans de prototypage - atelier d'idéation"
-            class="w-full max-w-md rounded-2xl shadow-lg"
+            class="w-full max-w-md mx-auto rounded-2xl shadow-lg block"
           />
         </div>
       </div>
@@ -379,7 +380,7 @@
       <h2 class="text-2xl font-semibold mb-1">{{ t("melo.testsTitle") }}</h2>
       <div class="w-32 h-1 bg-[#7A1E35] mb-10 section-line"></div>
 
-      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
         <div class="flex-1">
           <p class="mb-6">{{ t("melo.testsP") }}</p>
           <p class="font-semibold mb-2">{{ t("melo.testsValideTitle") }}</p>
@@ -487,6 +488,29 @@
         alt="Vision produit Melio à 12-24 mois"
         class="block md:hidden w-full rounded-3xl shadow-lg"
       />
+    </div>
+
+    <!-- Restitution -->
+    <div
+      id="presentation"
+      ref="presentation"
+      class="w-full max-w-7xl mx-auto bg-white px-6 md:px-16 mt-52 mb-32 text-black text-left animate-on-scroll"
+    >
+      <h2 class="text-2xl font-semibold mb-1">{{ t("melo.presentationTitle") }}</h2>
+      <div class="w-32 h-1 bg-[#7A1E35] mb-10 section-line"></div>
+
+      <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
+        <div class="flex-1">
+          <p class="text-lg leading-relaxed" v-html="t('melo.presentationP')"></p>
+        </div>
+        <div class="flex-1 flex justify-center">
+          <img
+            src="/MELO/presentation.webp"
+            alt="Restitution du projet Melio devant un jury de professionnels"
+            class="w-full max-w-sm md:max-w-md rounded-2xl shadow-lg"
+          />
+        </div>
+      </div>
     </div>
 
     <div
@@ -597,6 +621,7 @@ const fonctionnalites = ref(null);
 const tests = ref(null);
 const business = ref(null);
 const vision = ref(null);
+const presentation = ref(null);
 let observer = null;
 
 onMounted(() => {
@@ -624,6 +649,7 @@ onMounted(() => {
     tests,
     business,
     vision,
+    presentation,
   ];
   elements.forEach((el) => {
     if (el.value) {

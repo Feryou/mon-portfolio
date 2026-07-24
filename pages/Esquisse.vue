@@ -160,13 +160,13 @@
             {{ t("esquisse.ideationP4") }}
           </p>
         </div>
-        <div class="flex-1 flex flex-col gap-6 items-start justify-start pt-16">
+        <div class="flex-1 flex flex-col gap-6 items-center justify-start pt-16 w-full">
           <img
             src="/ESQUISSE/conception.webp"
             alt="Mockup Esquisse"
-            class="w-full max-w-md rounded-xl shadow-lg"
+            class="w-full max-w-md mx-auto rounded-xl shadow-lg block"
           />
-          <div class="bg-black text-white rounded-2xl px-6 py-5 w-full max-w-md">
+          <div class="bg-black text-white rounded-2xl px-6 py-5 w-full max-w-md mx-auto">
             <p class="text-lg font-semibold mb-1">{{ t("esquisse.ideationConcept1") }}</p>
             <p class="text-lg font-semibold">{{ t("esquisse.ideationConcept2") }}</p>
           </div>
