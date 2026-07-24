@@ -5,7 +5,7 @@
       class="relative w-full h-[320px] md:h-[400px] mt-12 flex items-center justify-center overflow-hidden"
     >
       <img
-        src="/Windmap.webp"
+        src="/WINDMAP/Windmap.webp"
         alt="Windmap"
         class="absolute inset-0 w-full h-full object-cover object-[center_30%] animate-scaleIn"
       />
@@ -61,7 +61,7 @@
         </div>
         <div class="flex-1 flex justify-center">
           <img
-            src="/mockup_windmap.png"
+            src="/WINDMAP/mockup_windmap.png"
             alt="Mockup Windmap"
             class="w-full max-w-md rounded-2xl shadow-lg"
           />
@@ -119,12 +119,12 @@
           class="flex flex-col md:flex-row w-full justify-center gap-4 md:gap-8"
         >
           <img
-            src="/WINDMAP PAGE/Identite_visuelle_2.webp"
+            src="/WINDMAP/Identite_visuelle_2.webp"
             alt="Windmap 1"
             class="rounded-xl shadow-lg bg-white w-full md:w-[45%] hover:scale-105 transition-transform duration-500"
           />
           <img
-            src="/WINDMAP PAGE/Identite_visuelle_3.webp"
+            src="/WINDMAP/Identite_visuelle_3.webp"
             alt="Windmap 2"
             class="rounded-xl shadow-lg bg-white w-full md:w-[45%] hover:scale-105 transition-transform duration-500"
           />
@@ -133,19 +133,19 @@
           class="flex flex-col md:flex-row w-full justify-center gap-4 md:gap-8"
         >
           <img
-            src="/WINDMAP PAGE/Identite_visuelle_4.webp"
+            src="/WINDMAP/Identite_visuelle_4.webp"
             alt="Windmap 3"
             class="rounded-xl shadow-lg bg-white w-full md:w-[45%] hover:scale-105 transition-transform duration-500"
           />
           <img
-            src="/WINDMAP PAGE/Identite_visuelle_5.webp"
+            src="/WINDMAP/Identite_visuelle_5.webp"
             alt="Windmap 4"
             class="rounded-xl shadow-lg bg-white w-full md:w-[45%] hover:scale-105 transition-transform duration-500"
           />
         </div>
         <div class="flex justify-center w-full">
           <img
-            src="/WINDMAP PAGE/Identite_visuelle_6.webp"
+            src="/WINDMAP/Identite_visuelle_6.webp"
             alt="Windmap 5"
             class="rounded-xl shadow-lg bg-white w-full md:w-[45%] hover:scale-105 transition-transform duration-500"
           />
@@ -166,23 +166,71 @@
       </ul>
       <p class="text-lg font-semibold underline mb-3">{{ t("windmap.designTitle") }}</p>
       <p class="text-lg" v-html="t('windmap.designP')"></p>
+
+      <div
+        class="relative h-[460px] sm:h-[500px] md:h-[640px] mt-28 md:mt-36 select-none"
+        @touchstart="onTouchStart"
+        @touchend="onTouchEnd"
+      >
+        <div class="absolute inset-0 overflow-hidden">
+          <div
+            v-for="(screen, i) in screens"
+            :key="i"
+            class="absolute inset-0 flex items-center justify-center transition-all duration-500 ease-out"
+            :class="screenOffset(i) === 2 ? 'hidden md:flex' : 'flex'"
+            :style="screenStyle(i)"
+          >
+            <img
+              :src="screen"
+              :alt="t(`windmap.screen${i + 1}`)"
+              class="h-full w-auto rounded-[1.5rem] md:rounded-[2.2rem]"
+            />
+          </div>
+        </div>
+
+        <button
+          @click="prevScreen"
+          aria-label="Écran précédent"
+          class="absolute top-1/2 left-1 md:-left-10 -translate-y-1/2 z-40 w-8 h-8 md:w-10 md:h-10 text-sm md:text-base rounded-full bg-white shadow-md flex items-center justify-center hover:bg-[#223C8D] hover:text-white transition"
+        >
+          &larr;
+        </button>
+        <button
+          @click="nextScreen"
+          aria-label="Écran suivant"
+          class="absolute top-1/2 right-1 md:-right-10 -translate-y-1/2 z-40 w-8 h-8 md:w-10 md:h-10 text-sm md:text-base rounded-full bg-white shadow-md flex items-center justify-center hover:bg-[#223C8D] hover:text-white transition"
+        >
+          &rarr;
+        </button>
+      </div>
+
+      <p class="text-center text-sm text-gray-500 mt-6">
+        {{ t(`windmap.screen${activeScreen + 1}`) }}
+      </p>
+
+      <div class="flex justify-center gap-2 mt-4">
+        <button
+          v-for="(screen, i) in screens"
+          :key="i"
+          @click="activeScreen = i"
+          :aria-label="`Aller à l'écran ${i + 1}`"
+          class="w-2.5 h-2.5 rounded-full transition"
+          :class="activeScreen === i ? 'bg-[#223C8D]' : 'bg-[#D9E4F5]'"
+        ></button>
+      </div>
     </div>
 
     <div
       ref="mockup"
       class="w-full flex justify-center my-20 animate-on-scroll-scale"
     >
-      <img
-        src="/WINDMAP PAGE/windmap_maquette.webp"
-        alt="Maquette Figma Windmap"
-        class="rounded-xl border-4 border-[#4a90e2] bg-[#222] w-full md:w-[45%] max-w-2xl hover:scale-105 transition-transform duration-500"
-      />
+      
     </div>
-    <div ref="ctaButton" class="flex justify-center my-20 animate-on-scroll">
+    <div ref="ctaButton" class="flex justify-center mt-8 mb-16 sm:my-20 animate-on-scroll">
       <a
         href="https://www.figma.com/proto/739ZGXaFy5iTFn154WUeW0/WindMap?node-id=2-62&p=f&t=QO5hsjB5AqUyTeaZ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A62&show-proto-sidebar=1"
         target="_blank"
-        class="px-8 py-3 border-2 border-black rounded-full text-lg font-medium hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect"
+        class="px-10 py-4 sm:px-8 sm:py-3 border-2 border-black rounded-full text-xl sm:text-lg font-medium hover:bg-[#9be4c4] hover:text-black transition duration-300 btn-hover-effect"
       >
         {{ t("windmap.testerMaquette") }}
       </a>
@@ -239,12 +287,12 @@
         </div>
         <div class="flex-1 flex items-center justify-center gap-4">
           <img
-            src="/WINDMAP PAGE/windmap_mobile_1.webp"
+            src="/WINDMAP/windmap_mobile_1.webp"
             alt="Windmap mobile splash"
             class="w-[45%] max-w-[220px] drop-shadow-xl"
           />
           <img
-            src="/WINDMAP PAGE/windmap_mobile_2.webp"
+            src="/WINDMAP/windmap_mobile_2.webp"
             alt="Windmap mobile app"
             class="w-[45%] max-w-[220px] drop-shadow-xl"
           />
@@ -303,6 +351,56 @@ import ProjectTOC from "../src/components/ProjectTOC.vue";
 import { useI18n } from "../src/composables/useI18n";
 
 const { t, currentLang, toggleLang } = useI18n();
+
+const screens = [
+  "/WINDMAP/mockup0.webp",
+  "/WINDMAP/mockup1.webp",
+  "/WINDMAP/mockup2.webp",
+  "/WINDMAP/mockup3.webp",
+  "/WINDMAP/mockup4.webp",
+  "/WINDMAP/mockup5.webp",
+];
+const activeScreen = ref(0);
+const nextScreen = () => {
+  activeScreen.value = (activeScreen.value + 1) % screens.length;
+};
+const prevScreen = () => {
+  activeScreen.value = (activeScreen.value - 1 + screens.length) % screens.length;
+};
+let touchStartX = 0;
+const onTouchStart = (e) => {
+  touchStartX = e.changedTouches[0].clientX;
+};
+const onTouchEnd = (e) => {
+  const delta = e.changedTouches[0].clientX - touchStartX;
+  if (delta > 40) prevScreen();
+  else if (delta < -40) nextScreen();
+};
+
+const screenOffset = (i) => {
+  let offset = i - activeScreen.value;
+  if (offset < 0) offset += screens.length;
+  return offset;
+};
+
+const screenStyle = (i) => {
+  const offset = screenOffset(i);
+  if (offset > 2) {
+    return { transform: "translateX(0) scale(0.8)", opacity: 0, zIndex: 0, pointerEvents: "none" };
+  }
+  const steps = [
+    { x: 0, scale: 1, opacity: 1, z: 30 },
+    { x: 46, scale: 0.86, opacity: 1, z: 20 },
+    { x: 78, scale: 0.74, opacity: 1, z: 10 },
+  ];
+  const s = steps[offset];
+  return {
+    transform: `translateX(${s.x}%) scale(${s.scale})`,
+    opacity: s.opacity,
+    zIndex: s.z,
+    pointerEvents: offset === 0 ? "auto" : "none",
+  };
+};
 
 const infoCard = ref(null);
 const section1 = ref(null);

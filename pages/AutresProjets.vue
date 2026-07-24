@@ -36,7 +36,7 @@
                   class="relative z-10 group w-full overflow-hidden rounded-[30px] border border-black bg-white transition-all duration-500 hover:scale-105 hover:shadow-xl aspect-[3/4] cursor-pointer"
                 >
                   <img
-                    src="/Madatlas.webp"
+                    src="/AUTRES/Madatlas.webp"
                     alt="Madatlas - Magazine"
                     class="w-full h-full object-cover rounded-[30px]"
                   />
@@ -71,7 +71,7 @@
                   class="relative z-10 group w-full overflow-hidden rounded-[30px] border border-black bg-white transition-all duration-500 hover:scale-105 hover:shadow-xl aspect-[3/4] cursor-pointer"
                 >
                   <img
-                    src="/Black Friday.webp"
+                    src="/AUTRES/Black Friday.webp"
                     alt="Black Friday - Design mobile"
                     class="w-full h-full object-cover rounded-[30px]"
                   />
@@ -106,7 +106,7 @@
                   class="relative z-10 group w-full overflow-hidden rounded-[30px] border border-black bg-white transition-all duration-500 hover:scale-105 hover:shadow-xl aspect-[3/4] cursor-pointer"
                 >
                   <img
-                    src="/Pink October.webp"
+                    src="/AUTRES/Pink October.webp"
                     alt="Nuxe - Pink October"
                     class="w-full h-full object-cover rounded-[30px]"
                   />
@@ -191,12 +191,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="border border-gray-300 rounded-3xl p-4 flex gap-4">
                 <img
-                  src="/MADATLAS DETAIL/une_2.webp"
+                  src="/AUTRES/une_2.webp"
                   alt="Madatlas couverture 1"
                   class="w-1/2 rounded-2xl object-cover"
                 />
                 <img
-                  src="/MADATLAS DETAIL/une2.webp"
+                  src="/AUTRES/une2.webp"
                   alt="Madatlas couverture 2"
                   class="w-1/2 rounded-2xl object-cover"
                 />
@@ -204,7 +204,7 @@
 
               <div class="border border-gray-300 rounded-3xl p-4">
                 <img
-                  src="/MADATLAS DETAIL/mockup.webp"
+                  src="/AUTRES/mockup.webp"
                   alt="Madatlas mockup"
                   class="w-full rounded-2xl object-cover mb-4"
                 />
@@ -292,14 +292,14 @@
               <div class="border border-gray-300 rounded-3xl p-4 flex gap-4">
                 <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
                   <img
-                    src="/NUXE/NUXE BF DETAIL/POST-NUXE-EU-BLACK FRIDAY-2024_1080x1920.webp"
+                    src="/AUTRES/POST-NUXE-EU-BLACK FRIDAY-2024_1080x1920.webp"
                     alt="Nuxe Black Friday post 1"
                     class="w-full h-full object-contain"
                   />
                 </div>
                 <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
                   <img
-                    src="/NUXE/NUXE BF DETAIL/POST-NUXE-BLACK FRIDAY-2024_WITHOUT_TEXT_1080x1920.webp"
+                    src="/AUTRES/POST-NUXE-BLACK FRIDAY-2024_WITHOUT_TEXT_1080x1920.webp"
                     alt="Nuxe Black Friday post 2"
                     class="w-full h-full object-contain"
                   />
@@ -309,7 +309,7 @@
               <div class="border border-gray-300 rounded-3xl p-4">
                 <div class="w-full h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden mb-4">
                   <img
-                    src="/NUXE/NUXE BF DETAIL/BAN_DAT-NUXE-EN-BLACK_FRIDAY_1220x600.webp"
+                    src="/AUTRES/BAN_DAT-NUXE-EN-BLACK_FRIDAY_1220x600.webp"
                     alt="Nuxe Black Friday bannière"
                     class="w-full h-full object-contain"
                   />
@@ -398,14 +398,14 @@
               <div class="border border-gray-300 rounded-3xl p-4 flex gap-4">
                 <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
                   <img
-                    src="/NUXE/NUXE PO DETAIL/IMG_3526.webp"
+                    src="/AUTRES/IMG_3526.webp"
                     alt="Nuxe Pink October Instagram"
                     class="w-full h-full object-contain"
                   />
                 </div>
                 <div class="w-1/2 h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden">
                   <img
-                    src="/NUXE/NUXE PO DETAIL/POST-NUXE-EN-PINK_OCTOBER_ALL_CONCERNED-1080x1920.webp"
+                    src="/AUTRES/POST-NUXE-EN-PINK_OCTOBER_ALL_CONCERNED-1080x1920.webp"
                     alt="Nuxe Pink October All Concerned"
                     class="w-full h-full object-contain"
                   />
@@ -415,7 +415,7 @@
               <div class="border border-gray-300 rounded-3xl p-4">
                 <div class="w-full h-72 md:h-96 bg-white rounded-2xl flex items-center justify-center overflow-hidden mb-4">
                   <img
-                    src="/NUXE/NUXE PO DETAIL/POST-NUXE-EN-PINK_OCTOBER-ALARMING_SIGNALS-1080x1920.webp"
+                    src="/AUTRES/POST-NUXE-EN-PINK_OCTOBER-ALARMING_SIGNALS-1080x1920.webp"
                     alt="Nuxe Pink October Know the Signs"
                     class="w-full h-full object-contain"
                   />

@@ -18,7 +18,7 @@
     class="w-2/3 md:w-1/2 mx-auto transition-transform duration-500 rounded-3xl"
     style="mix-blend-mode: screen"
   >
-    <source src="/perso.mp4" type="video/mp4">
+    <source src="/ABOUT/perso.mp4" type="video/mp4">
   </video>
 </div>
         </div>
@@ -49,7 +49,7 @@
             {{ t("about.p2") }}
           </p>
           <a
-          href="/CV_Feryel_FR.pdf"
+          href="/ABOUT/CV_Feryel_FR.pdf"
             target="_blank"
             rel="noopener"
             class="mt-6 md:mt-2 px-8 py-3 border-2 border-black rounded-full hover:bg-[#9be4c4] hover:text-black transition font-medium text-lg self-start btn-hover-effect animate-slideUp delay-400"

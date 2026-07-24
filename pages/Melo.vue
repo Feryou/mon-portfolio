@@ -75,7 +75,7 @@
           <img
             src="/MELO/mockup_affiche.webp"
             alt="Melo - suivi médical sur mobile"
-            class="w-full max-w-md rounded-3xl shadow-lg"
+            class="w-full max-w-xl rounded-3xl shadow-lg"
           />
         </div>
       </div>
@@ -308,35 +308,37 @@
       </div>
 
       <div
-        class="relative h-[280px] sm:h-[360px] md:h-[520px] mt-16 select-none overflow-hidden"
+        class="relative h-[460px] sm:h-[500px] md:h-[640px] mt-28 md:mt-36 select-none"
         @touchstart="onTouchStart"
         @touchend="onTouchEnd"
       >
-        <div
-          v-for="(screen, i) in screens"
-          :key="i"
-          class="absolute inset-0 flex items-center justify-center transition-all duration-500 ease-out"
-          :class="screenOffset(i) === 2 ? 'hidden md:flex' : 'flex'"
-          :style="screenStyle(i)"
-        >
-          <img
-            :src="screen"
-            :alt="t(`melo.screen${i + 1}`)"
-            class="h-full w-auto rounded-[1.5rem] md:rounded-[2.2rem] shadow-2xl"
-          />
+        <div class="absolute inset-0 overflow-hidden">
+          <div
+            v-for="(screen, i) in screens"
+            :key="i"
+            class="absolute inset-0 flex items-center justify-center transition-all duration-500 ease-out"
+            :class="screenOffset(i) === 2 ? 'hidden md:flex' : 'flex'"
+            :style="screenStyle(i)"
+          >
+            <img
+              :src="screen"
+              :alt="t(`melo.screen${i + 1}`)"
+              class="h-full w-auto rounded-[1.5rem] md:rounded-[2.2rem]"
+            />
+          </div>
         </div>
 
         <button
           @click="prevScreen"
           aria-label="Écran précédent"
-          class="absolute top-1/2 left-1 md:-left-6 -translate-y-1/2 z-40 w-8 h-8 md:w-10 md:h-10 text-sm md:text-base rounded-full bg-white shadow-md flex items-center justify-center hover:bg-[#7A1E35] hover:text-white transition"
+          class="absolute top-1/2 left-1 md:-left-10 -translate-y-1/2 z-40 w-8 h-8 md:w-10 md:h-10 text-sm md:text-base rounded-full bg-white shadow-md flex items-center justify-center hover:bg-[#7A1E35] hover:text-white transition"
         >
           &larr;
         </button>
         <button
           @click="nextScreen"
           aria-label="Écran suivant"
-          class="absolute top-1/2 right-1 md:-right-6 -translate-y-1/2 z-40 w-8 h-8 md:w-10 md:h-10 text-sm md:text-base rounded-full bg-white shadow-md flex items-center justify-center hover:bg-[#7A1E35] hover:text-white transition"
+          class="absolute top-1/2 right-1 md:-right-10 -translate-y-1/2 z-40 w-8 h-8 md:w-10 md:h-10 text-sm md:text-base rounded-full bg-white shadow-md flex items-center justify-center hover:bg-[#7A1E35] hover:text-white transition"
         >
           &rarr;
         </button>
@@ -574,8 +576,8 @@ const screenStyle = (i) => {
   }
   const steps = [
     { x: 0, scale: 1, opacity: 1, z: 30 },
-    { x: 34, scale: 0.86, opacity: 0.65, z: 20 },
-    { x: 60, scale: 0.74, opacity: 0.35, z: 10 },
+    { x: 46, scale: 0.86, opacity: 1, z: 20 },
+    { x: 78, scale: 0.74, opacity: 1, z: 10 },
   ];
   const s = steps[offset];
   return {

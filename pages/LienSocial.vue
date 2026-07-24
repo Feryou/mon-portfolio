@@ -5,7 +5,7 @@
       class="relative w-full h-[320px] md:h-[400px] mt-12 flex items-center justify-center overflow-hidden"
     >
       <img
-        src="/PROJET 1/Pronote.webp"
+        src="/LIEN SOCIAL/Pronote.webp"
         alt="Pronote"
         class="absolute inset-0 w-full h-full object-cover object-[center_20%] animate-scaleIn"
       />
@@ -60,12 +60,12 @@
           class="pl-4 sm:pl-8 font-normal text-lg sm:text-xl flex flex-col sm:flex-row items-center gap-3 sm:gap-4"
         >
           <img
-            src="/PROJET 1/Logo-docaposte.svg.png"
+            src="/LIEN SOCIAL/Logo-docaposte.svg.png"
             alt=""
             class="h-7 sm:h-10 w-auto object-contain"
           />
           <img
-            src="/PROJET 1/unnamed.png"
+            src="/LIEN SOCIAL/unnamed.png"
             alt=""
             class="h-16 sm:h-26 w-auto object-contain"
           />
@@ -106,7 +106,7 @@
 
         <div class="flex-1 flex justify-center">
           <img
-            src="/mockup.webp"
+            src="/LIEN SOCIAL/mockup.webp"
             alt="Mockup Pronote - Interface de traduction"
             class="w-full max-w-md rounded-3xl shadow-lg"
           />
@@ -250,17 +250,17 @@
 
         <div class="flex-1 grid grid-cols-2 grid-rows-2 gap-3">
           <img
-            src="/PROJET 1/webp/DSC01526.webp"
+            src="/LIEN SOCIAL/DSC01526.webp"
             alt="Atelier d'idéation"
             class="w-full h-full object-cover rounded-xl row-span-2"
           />
           <img
-            src="/PROJET 1/webp/DSC01529.webp"
+            src="/LIEN SOCIAL/DSC01529.webp"
             alt="Salle de réunion"
             class="w-full h-48 object-cover rounded-xl"
           />
           <img
-            src="/PROJET 1/webp/DSC01702.webp"
+            src="/LIEN SOCIAL/DSC01702.webp"
             alt="Post-its brainstorming"
             class="w-full h-48 object-cover rounded-xl"
           />
@@ -286,12 +286,12 @@
               class="absolute top-0 left-1/2 -translate-x-1/2 w-52 h-52 md:w-72 md:h-72 bg-[#A1DFCC] rounded-full opacity-50 items-center"
             ></div>
             <img
-              src="/PROJET 1/webp/Recto2-Pires-Idees-Format-A5.webp"
+              src="/LIEN SOCIAL/Recto2-Pires-Idees-Format-A5.webp"
               alt="Jeu des Pires Idées - Recto"
               class="absolute left-0 top-1/2 -translate-y-1/2 w-44 md:w-60 -rotate-12 drop-shadow-xl z-10"
             />
             <img
-              src="/PROJET 1/webp/Verso2-Pires-Idees-Format-A5.webp"
+              src="/LIEN SOCIAL/Verso2-Pires-Idees-Format-A5.webp"
               alt="Jeu des Pires Idées - Verso"
               class="absolute right-0 top-1/2 -translate-y-1/2 w-40 md:w-56 rotate-12 drop-shadow-xl z-20"
             />
@@ -338,7 +338,7 @@
           class="flex-1 flex items-start justify-center overflow-hidden rounded-xl shadow-md"
         >
           <img
-            src="/PROJET 1/webp/Tests.webp"
+            src="/LIEN SOCIAL/Tests.webp"
             alt="Tests d'utilisabilité"
             class="w-full h-72 scale-100 origin-center"
           />
@@ -348,56 +348,49 @@
       <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start mt-20">
         <div class="flex-1">
           <p class="text-lg font-semibold underline mb-8">
-            {{ t("lienSocial.retoursTitle") }}
+            {{ t("lienSocial.tensionsTitle") }}
           </p>
 
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <span
-                class="flex-shrink-0 w-8 h-8 rounded-full bg-[#A1DFCC] flex items-center justify-center text-lg font-semibold"
-                >1</span
-              >
-              <p class="text-lg" v-html="t('lienSocial.retour1')"></p>
-            </div>
-            <div class="flex items-start gap-4">
-              <span
-                class="flex-shrink-0 w-8 h-8 rounded-full bg-[#A1DFCC] flex items-center justify-center text-lg font-semibold"
-                >2</span
-              >
-              <p class="text-lg">
-                {{ t("lienSocial.retour2") }}
+          <div class="space-y-4">
+            <div class="bg-[#A1DFCC]/30 border border-[#A1DFCC] rounded-2xl p-5">
+              <p class="text-lg font-semibold mb-2">
+                {{ t("lienSocial.tension1Titre") }}
               </p>
+              <p class="text-base leading-relaxed" v-html="t('lienSocial.tension1Texte')"></p>
             </div>
-            <div class="flex items-start gap-4">
-              <span
-                class="flex-shrink-0 w-8 h-8 rounded-full bg-[#A1DFCC] flex items-center justify-center text-lg font-semibold"
-                >3</span
-              >
-              <p class="text-lg">
-                {{ t("lienSocial.retour3") }}
+            <div class="bg-[#A1DFCC]/30 border border-[#A1DFCC] rounded-2xl p-5">
+              <p class="text-lg font-semibold mb-2">
+                {{ t("lienSocial.tension2Titre") }}
               </p>
+              <p class="text-base leading-relaxed" v-html="t('lienSocial.tension2Texte')"></p>
+            </div>
+            <div class="bg-[#A1DFCC]/30 border border-[#A1DFCC] rounded-2xl p-5">
+              <p class="text-lg font-semibold mb-2">
+                {{ t("lienSocial.tension3Titre") }}
+              </p>
+              <p class="text-base leading-relaxed" v-html="t('lienSocial.tension3Texte')"></p>
             </div>
           </div>
         </div>
 
-        <div class="flex-1 flex items-center gap-4">
+        <div class="flex-1 flex items-center gap-4 mt-10">
           <span class="text-5xl font-bold">&rarr;</span>
-          <div class="flex flex-col md:flex-row gap-6 w-full">
+          <div class="flex flex-col gap-6 w-full items-center">
             <div class="text-center">
               <img
-                src="/PROJET 1/webp/airbnb.PNG"
-                alt="Airbnb traduction"
-                class="w-full md:w-44 rounded-xl shadow-md"
+                src="/LIEN SOCIAL/image 51.webp"
+                alt="Vinted traduction"
+                class="w-full max-w-[140px] rounded-xl shadow-md"
               />
-              <p class="text-xs mt-2">Airbnb</p>
+              <p class="text-xs mt-2">Vinted</p>
             </div>
             <div class="text-center">
               <img
-                src="/PROJET 1/webp/image 51.webp"
-                alt="Vinted traduction"
-                class="w-full md:w-44 rounded-xl shadow-md"
+                src="/LIEN SOCIAL/airbnb.webp"
+                alt="Airbnb traduction"
+                class="w-full max-w-xl rounded-xl shadow-md"
               />
-              <p class="text-xs mt-2">Vinted</p>
+              <p class="text-xs mt-2">Airbnb</p>
             </div>
           </div>
         </div>
@@ -426,14 +419,14 @@
       <div class="flex flex-col md:flex-row gap-8 mb-16">
         <div class="flex-1">
           <img
-            src="/PROJET 1/webp/prototype1.webp"
+            src="/LIEN SOCIAL/prototype1.webp"
             alt="Prototype - Nouvelle discussion"
             class="w-full h-auto rounded-xl shadow-md"
           />
         </div>
         <div class="flex-1">
           <img
-            src="/PROJET 1/webp/prototype2.webp"
+            src="/LIEN SOCIAL/prototype2.webp"
             alt="Prototype - Liste des élèves"
             class="w-full h-auto rounded-xl shadow-md"
           />
@@ -522,7 +515,7 @@
         </div>
         <div class="flex-1">
           <img
-            src="/PROJET 1/webp/Pilotage-projet.webp"
+            src="/LIEN SOCIAL/Pilotage-projet.webp"
             alt="Pilotage du projet - Cascade et Agile"
             class="w-full h-auto rounded-xl shadow-md"
           />
@@ -542,7 +535,7 @@
         </div>
         <div class="flex-1">
           <img
-            src="/PROJET 1/webp/Budget-projet.webp"
+            src="/LIEN SOCIAL/Budget-projet.webp"
             alt="Budget du projet"
             class="w-full h-auto rounded-xl shadow-md"
           />
@@ -565,7 +558,7 @@
         </div>
         <div class="flex-1">
           <img
-            src="/presentation.jpg"
+            src="/LIEN SOCIAL/presentation.jpg"
             alt="Présentation du projet devant les équipes Pronote et Docaposte"
             class="w-full rounded-2xl shadow-lg"
           />

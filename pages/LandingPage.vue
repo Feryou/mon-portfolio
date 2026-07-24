@@ -7,7 +7,7 @@
         class="flex flex-col lg:flex-row items-center justify-center px-4 md:px-12 pt-0 md:pt-20 gap-8 md:gap-22 relative pb-12"
       >
       <img
-  src="/Ampoule_home_page.webp"
+  src="/HOME/Ampoule_home_page.webp"
   alt="Ampoule"
   loading="eager"
   fetchpriority="high"
@@ -145,10 +145,10 @@
   const { t } = useI18n();
   
   const projects = [
-    { title: "Module de traduction sur Pronote", image: "/Pronote.webp", route: "lien-social", cta: "Voir le case study" },
+    { title: "Module de traduction sur Pronote", image: "/LIEN SOCIAL/Pronote.webp", route: "lien-social", cta: "Voir le case study" },
     { title: "Copilote santé pour les patients", image: "/MELO/mockup_hero_landing.webp", route: "melo", cta: "Voir le case study", imgClass: "scale-150 object-[center_35%]" },
-    { title: "Application mobile pour les artistes", image: "ESQUISSE/webp/Esquisse.webp", route: "Esquisse", cta: "Voir le case study" },
-    { title: "Application mobile météo", image: "/Windmap.webp", route: "Windmap", cta: "Voir le case study" },
+    { title: "Application mobile pour les artistes", image: "ESQUISSE/Esquisse.webp", route: "Esquisse", cta: "Voir le case study" },
+    { title: "Application mobile météo", image: "/WINDMAP/Windmap.webp", route: "Windmap", cta: "Voir le case study" },
   ];
   
   const projectRefs = ref([]);

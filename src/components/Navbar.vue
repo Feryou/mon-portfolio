@@ -3,7 +3,7 @@
     class="border border-black rounded-[2rem] px-6 py-4 flex items-center w-full max-w-7xl mx-auto mt-6 relative z-30"
   >
     <router-link to="/" aria-label="Accueil">
-    <img src="/logo.png" alt="Logo Feryel Khelifi" 
+    <img src="/HOME/logo.png" alt="Logo Feryel Khelifi" 
     width="120"
   height="40"
   class="h-10 md:h-12 w-auto m-4" />

@@ -5,7 +5,7 @@
       class="relative w-full h-[320px] md:h-[400px] mt-12 flex items-center justify-center overflow-hidden"
     >
       <img
-        src="/ESQUISSE/webp/Esquisse.webp"
+        src="/ESQUISSE/Esquisse.webp"
         alt="Madatlas Header"
         class="absolute inset-0 w-full h-full object-cover animate-scaleIn"
       />
@@ -67,7 +67,7 @@
         </div>
         <div class="flex-1 flex justify-center">
           <img
-            src="/proto.png"
+            src="/ESQUISSE/proto.webp"
             alt="Prototype Esquisse"
             class="w-full max-w-md rounded-2xl"
             style="mix-blend-mode: multiply;"
@@ -181,7 +181,7 @@
           </div>
           <div class="flex-1 flex justify-center">
             <video
-              src="/proto_papermobile.mp4"
+              src="/ESQUISSE/proto_papermobile.mp4"
               class="w-full max-w-xs rounded-2xl shadow-lg"
               controls
               preload="metadata"
@@ -209,7 +209,10 @@
             class="w-full aspect-square object-cover object-top rounded-2xl mb-6"
           />
           <h4 class="text-lg font-bold mb-2">{{ t("esquisse.feat1Title") }}</h4>
-          <p class="text-base text-gray-400 font-light">{{ t("esquisse.feat1Desc") }}</p>
+          <p class="text-base text-gray-400 font-light mb-4">{{ t("esquisse.feat1Desc") }}</p>
+          <div class="bg-black text-white rounded-2xl px-5 py-4 text-left w-full">
+            <p class="text-sm leading-relaxed">{{ t("esquisse.feat1Explication") }}</p>
+          </div>
         </div>
 
         <div class="flex flex-col items-center text-center">
@@ -219,7 +222,10 @@
             class="w-full aspect-square object-cover object-top rounded-2xl mb-6"
           />
           <h4 class="text-lg font-bold mb-2">{{ t("esquisse.feat2Title") }}</h4>
-          <p class="text-base text-gray-400 font-light">{{ t("esquisse.feat2Desc") }}</p>
+          <p class="text-base text-gray-400 font-light mb-4">{{ t("esquisse.feat2Desc") }}</p>
+          <div class="bg-black text-white rounded-2xl px-5 py-4 text-left w-full">
+            <p class="text-sm leading-relaxed">{{ t("esquisse.feat2Explication") }}</p>
+          </div>
         </div>
 
         <div class="flex flex-col items-center text-center">
@@ -229,7 +235,10 @@
             class="w-full aspect-square object-cover object-top rounded-2xl mb-6"
           />
           <h4 class="text-lg font-bold mb-2">{{ t("esquisse.feat3Title") }}</h4>
-          <p class="text-base text-gray-400 font-light">{{ t("esquisse.feat3Desc") }}</p>
+          <p class="text-base text-gray-400 font-light mb-4">{{ t("esquisse.feat3Desc") }}</p>
+          <div class="bg-black text-white rounded-2xl px-5 py-4 text-left w-full">
+            <p class="text-sm leading-relaxed">{{ t("esquisse.feat3Explication") }}</p>
+          </div>
         </div>
       </div>
 

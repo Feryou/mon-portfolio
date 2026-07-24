@@ -95,6 +95,12 @@ export const translations = {
       kpi1: "Taux de retour hebdomadaire : l'app devient-elle un réflexe avant une sortie outdoor ?",
       kpi2: "Nombre de contenus partagés dans la communauté, validation de l'engagement social",
       kpi3: "Villes et lieux mis en favoris : proxy de l'ancrage dans les habitudes de l'utilisateur",
+      screen1: "Page d'accueil",
+      screen2: "Villes favorites",
+      screen3: "Carte animées",
+      screen4: "Messagerie",
+      screen5: "Alertes météo en temps réel",
+      screen6: "Profil et spots favoris",
       conclusion:
         "Ce projet m'a permis de renforcer ma méthodologie UX dans un contexte contraint, tout en développant une approche UI orientée clarté, accessibilité et engagement",
       precedent: "Précédent",
@@ -196,10 +202,16 @@ export const translations = {
         "Voici une visualisation du wireframe papier mis en regard du rendu final réalisé sur Figma :",
       feat1Title: "Gamification / suivi de progression",
       feat1Desc: "Challenges, jeux et défis évolutifs",
+      feat1Explication:
+        "On a découvert que la personne ne consacre que 2 heures par semaine à la pratique artistique, peu de temps pour rester motivée sur la durée. On a donc choisi un système de challenges et de suivi de progression, plutôt qu'un simple catalogue de contenus, pour donner un cap et une raison de revenir malgré un temps limité.",
       feat2Title: "Recherche intuitive",
       feat2Desc: "Guider l'utilisateur dans sa recherche",
+      feat2Explication:
+        "On a découvert que l'utilisateur consomme déjà du contenu artistique via Google, YouTube et des blogs spécialisés, sans plateforme centralisée. On a donc choisi une recherche guidée et intuitive, plutôt qu'un moteur de recherche classique par mots-clés, pour l'aider à naviguer un univers déjà fragmenté sans connaissance préalable du vocabulaire artistique.",
       feat3Title: "Socialisation hybride",
       feat3Desc: "Communauté et événements physiques",
+      feat3Explication:
+        "On a découvert que les utilisateurs consomment déjà du contenu en ligne (YouTube, blogs) mais que la pratique créative reste souvent solitaire. On a donc choisi une socialisation hybride — communauté en ligne et événements physiques — pour recréer une dimension collective que le simple visionnage de contenu ne permet pas.",
       wireframeBF: "Wireframe basse fidélité",
       maquetteHF: "Maquette haute fidélité",
       wireframePapierTitle: "Wireframe papier",
@@ -288,13 +300,16 @@ export const translations = {
       scenario2Title: "Scénario 2 :",
       scenario2:
         "Par ailleurs vous avez remarqué des difficultés scolaires de cette élève, et vous souhaitez en parler à ses parents",
-      retoursTitle: "Retours des tests d'utilisabilité :",
-      retour1:
-        "Sujet de risque de <strong>stigmatisation</strong> d'afficher la langue cible de traduction sur les profils",
-      retour2:
-        "L'utilisateur doit-il avoir la possibilité de voir la traduction ou doit-elle se faire sans qu'il le voit ?",
-      retour3:
-        "Potentiel charge mentale supplémentaire pour l'enseignant de devoir traduire lui-même",
+      tensionsTitle: "Tensions rencontrées",
+      tension1Titre: "La tension stigmatisation vs simplicité pour l'enseignant",
+      tension1Texte:
+        "Les tests ont révélé qu'afficher la langue cible de traduction sur le profil d'un élève l'exposait auprès de ses autres élèves ou du personnel. On a choisi de retirer cette information affichée, plutôt que de créer un risque de stigmatisation pour des familles déjà éloignées du numérique.",
+      tension2Titre: "La tension inclusivité vs simplicité de lecture",
+      tension2Texte:
+        "Un retour de test a mis en évidence le manque d'inclusivité du terme \"parents\", qui exclut les familles dont l'enfant n'a pas de \"responsable légal\" pour l'inscription scolaire, même si moins immédiat à comprendre au premier regard.",
+      tension3Titre: "La tension autonomie de l'enseignant vs charge de travail",
+      tension3Texte:
+        "Les tests ont montré que traduire soi-même ses messages pouvait représenter une charge supplémentaire pour l'enseignant, déjà sollicité sur de nombreux fronts. Ce point n'est pas encore résolu dans le MVP actuel — la piste envisagée pour la suite est un système de messages-types pré-traduits ou une automatisation partielle, à explorer en phase 2.",
       iterationsTitle: "Itérations du prototype",
       changements: "Changements apportés :",
       changement1: "Ne pas afficher les langues cible de traduction",
@@ -321,7 +336,7 @@ export const translations = {
       budget3:
         "Deviser les solutions de traduction et vocalisation (IA, partenariats, abonnements ?)",
       presentationTitle: "Restitution devant Pronote & Docaposte",
-      presentationP: "À l'issue du projet, nous avons présenté notre démarche et notre solution devant les <strong>équipes produit de Pronote et Docaposte</strong> — commanditaires du projet. Une occasion de défendre nos choix de design, d'expliquer notre raisonnement UX et de recevoir des retours terrain de professionnels du secteur.",
+      presentationP: "À l'issue du projet, nous avons présenté notre démarche et notre solution devant les <strong>équipes produit de Pronote et Docaposte</strong> commanditaires du projet. Une occasion de défendre nos choix de design, d'expliquer notre raisonnement UX et de recevoir des retours terrain de professionnels du secteur.",
       precedent: "Précédent",
       suivant: "Suivant",
     },
@@ -584,6 +599,12 @@ pinkOctoberCaption: "Post Instagram — Pink October",
       kpi1: "Weekly return rate — does the app become a reflex before an outdoor outing?",
       kpi2: "Number of community posts shared — validation of social engagement",
       kpi3: "Saved cities and locations — proxy for user habit anchoring",
+      screen1: "Homepage",
+      screen2: "Favorite cities",
+      screen3: "Animated carts",
+      screen4: "Friends chat feed",
+      screen5: "Real time weather alerts",
+      screen6: "Profile and favorite spots",
       conclusion:
         "This project allowed me to strengthen my UX methodology in a constrained context, while developing a UI approach focused on clarity, accessibility and engagement",
       precedent: "Previous",
@@ -680,10 +701,16 @@ pinkOctoberCaption: "Post Instagram — Pink October",
         "Here is a side-by-side view of the paper wireframe and the final result designed in Figma:",
       feat1Title: "Gamification / progress tracking",
       feat1Desc: "Challenges, games and evolving objectives",
+      feat1Explication:
+        "We discovered that the person only spends 2 hours a week on artistic practice, leaving little time to stay motivated over the long run. We therefore chose a system of challenges and progress tracking, rather than a simple content catalog, to give a sense of direction and a reason to come back despite limited time.",
       feat2Title: "Intuitive search",
       feat2Desc: "Guiding the user through their search",
+      feat2Explication:
+        "We discovered that the user already consumes art content through Google, YouTube and specialized blogs, without a centralized platform. We therefore chose a guided, intuitive search, rather than a classic keyword-based search engine, to help them navigate an already fragmented landscape without prior knowledge of art vocabulary.",
       feat3Title: "Hybrid socialisation",
       feat3Desc: "Community and physical events",
+      feat3Explication:
+        "We discovered that users already consume content online (YouTube, blogs), but creative practice often remains solitary. We therefore chose hybrid socialization — an online community plus physical events — to recreate a collective dimension that simply watching content doesn't provide.",
       wireframeBF: "Low-fidelity wireframe",
       maquetteHF: "High-fidelity mockup",
       wireframePapierTitle: "Paper wireframe",
@@ -770,13 +797,16 @@ pinkOctoberCaption: "Post Instagram — Pink October",
       scenario2Title: "Scenario 2:",
       scenario2:
         "Furthermore, you have noticed academic difficulties with this student, and you wish to discuss them with their parents.",
-      retoursTitle: "Usability test feedback:",
-      retour1:
-        "Risk of <strong>stigmatization</strong> by displaying the target translation language on profiles",
-      retour2:
-        "Should the user have the option to see the translation or should it happen without them knowing?",
-      retour3:
-        "Potential additional mental burden for the teacher having to translate themselves",
+      tensionsTitle: "Tensions encountered",
+      tension1Titre: "Stigmatization vs simplicity for the teacher",
+      tension1Texte:
+        "Tests revealed that displaying the target translation language on a student's profile exposed it to other students or staff. We chose to remove this displayed information, rather than risk stigmatizing families already disconnected from digital tools.",
+      tension2Titre: "Inclusivity vs reading simplicity",
+      tension2Texte:
+        "Test feedback highlighted the lack of inclusivity of the term \"parents\", which excludes families whose child does not have a \"parent\" but a \"legal guardian\" for school enrollment, even though this wording is less immediately understandable at first glance.",
+      tension3Titre: "Teacher autonomy vs workload",
+      tension3Texte:
+        "Tests showed that translating messages themselves could represent an additional burden for teachers, already stretched across many fronts. This point is not yet resolved in the current MVP — the planned direction is a system of pre-translated message templates or partial automation, to be explored in phase 2.",
       iterationsTitle: "Prototype iterations",
       changements: "Changes made:",
       changement1: "Do not display target translation languages",
@@ -802,7 +832,7 @@ pinkOctoberCaption: "Post Instagram — Pink October",
       budget3:
         "Estimate translation and vocalization solutions (AI, partnerships, subscriptions?)",
       presentationTitle: "Final pitch to Pronote & Docaposte",
-      presentationP: "At the end of the project, we presented our approach and solution to the <strong>product teams at Pronote and Docaposte</strong> — the project's clients. An opportunity to defend our design choices, explain our UX reasoning, and receive real-world feedback from industry professionals.",
+      presentationP: "At the end of the project, we presented our approach and solution to the <strong>product teams at Pronote and Docaposte</strong> the project's clients. An opportunity to defend our design choices, explain our UX reasoning, and receive real-world feedback from industry professionals.",
       precedent: "Previous",
       suivant: "Next",
     },
