@@ -4,7 +4,6 @@ import LandingPage from "../pages/LandingPage.vue";
 import About from "../pages/About.vue";
 import Windmap from "../pages/Windmap.vue";
 import AtelierUx from "../pages/AtelierUx.vue";
-import Cabane from "../pages/Cabane.vue";
 import Esquisse from "../pages/Esquisse.vue";
 import AutresProjets from "../pages/AutresProjets.vue";
 import LienSocial from "../pages/LienSocial.vue";
@@ -15,7 +14,6 @@ const routes = [
   { path: "/about", component: About },
   { path: "/windmap", component: Windmap },
   { path: "/atelierux", component: AtelierUx },
-  { path: "/cabane", component: Cabane },
   { path: "/esquisse", component: Esquisse },
   { path: "/autres-projets", component: AutresProjets },
   { path: "/lien-social", component: LienSocial },
