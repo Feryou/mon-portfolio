@@ -284,7 +284,7 @@ export const translations = {
         "Nous avons réalisé des tests d'utilisabilité avec 8 enseignants afin de tester <strong>notre solution de traduction</strong> et la possibilité de voir la langue cible de traduction dans les fiches d'élèves des ENT.",
       scenario1Title: "Scénario 1 :",
       scenario1:
-        "Vous avez organisé un goûter dans votre classe, et votre élève Issa DIALLO vous a informé qu'il était allergique au gluten. Vous souhaitez vérifier que cette information est à jour.",
+        "Vous avez organisé un goûter dans votre classe, et votre élève vous a informé qu'il était allergique au gluten. Vous souhaitez vérifier que cette information est à jour.",
       scenario2Title: "Scénario 2 :",
       scenario2:
         "Par ailleurs vous avez remarqué des difficultés scolaires de cette élève, et vous souhaitez en parler à ses parents",
@@ -402,7 +402,7 @@ export const translations = {
       conception2Title: "Un deuxième arbitrage : la modération de la communauté",
       conception2P: "En tant qu'hébergeur, nous pourrions théoriquement modérer notre contenu une fois signalé. Mais les risques sanitaires et réglementaires nous ont poussés à prévoir, dès le départ, un système d'engagement validé et à faible friction.",
       conception3Title: "La solution retenue",
-      conception3P: "Chaque consentement est demandé au moment où il devient utile pour l'utilisateur, jamais dès l'inscription : le consentement RGPD lors de la création du compte, celui lié aux données de santé au moment de l'activation d'une connexion à Docaposte ou Mon Espace Santé.",
+      conception3P: "Chaque consentement est demandé au moment où il devient utile pour l'utilisateur, jamais dès l'inscription : le consentement RGPD lors de la création du compte, celui lié aux données de santé au moment de l'activation d'une connexion à Doctolib ou Mon Espace Santé.",
       conception4Title: "Pourquoi c'est un choix de conception, pas une case à cocher",
       conception4P: "Ces contraintes n'ont pas été vécues comme des freins : elles ont directement façonné l'onboarding et la priorisation de la roadmap.",
       fonctionnalitesTitle: "Fonctionnalités principales",
@@ -858,7 +858,7 @@ export const translations = {
       conception2Title: "A second trade-off: community moderation",
       conception2P: "As a host, we could in theory moderate content once reported. But health and regulatory risks pushed us to plan, from the start, a validated, low-friction engagement system.",
       conception3Title: "The solution we chose",
-      conception3P: "Each consent is requested at the moment it becomes useful to the user, never all at signup: GDPR consent at account creation, health-data consent when activating a connection to Docaposte or Mon Espace Santé.",
+      conception3P: "Each consent is requested at the moment it becomes useful to the user, never all at signup: GDPR consent at account creation, health-data consent when activating a connection to Doctolib or Mon Espace Santé.",
       conception4Title: "Why it's a design choice, not a checkbox",
       conception4P: "These constraints weren't experienced as blockers: they directly shaped the onboarding and the roadmap prioritization.",
       fonctionnalitesTitle: "Core features",
